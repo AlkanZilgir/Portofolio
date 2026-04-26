@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alkan Zilgir – Software Engineering student at AAB College, Kosovo. Portfolio showcasing projects in HTML/CSS, Java, Python, C#, PHP and SQL.">
+  <meta name="keywords" content="Alkan Zilgir, Software Engineering, Portfolio, Java, Python, C#, PHP, SQL, MySQL, jQuery, Bootstrap, AAB College, Kosovo, Web Developer">
+  <meta name="author" content="Alkan Zilgir">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Alkan Zilgir | Software Engineering Portfolio">
+  <meta property="og:description" content="Portfolio of Alkan Zilgir – Software Engineering student at AAB College.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" href="https://placehold.co/32x32/1255a4/ffffff?text=AZ">
+  <title>Alkan Zilgir | Software Engineering Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- BACK TO TOP -->
+  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <!-- NAVBAR -->
+  <header id="site-header">
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+          <span class="brand-badge">AZ</span>
+          <span class="brand-name">Alkan<span class="brand-accent"> Zilgir</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-1 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#media">Media</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#interests">Interests</a></li>
+            <li class="nav-item"><a class="nav-link nav-link-custom" href="#timeline">Timeline</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="nav-cta" href="#contact"><i class="bi bi-envelope-fill me-1"></i>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div id="hero" class="hero-section">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+    <div class="orb orb-4" aria-hidden="true"></div>
+    <div class="particle p1" aria-hidden="true"></div>
+    <div class="particle p2" aria-hidden="true"></div>
+    <div class="particle p3" aria-hidden="true"></div>
+    <div class="particle p4" aria-hidden="true"></div>
+    <div class="particle p5" aria-hidden="true"></div>
+    <div class="particle p6" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="container text-center">
+        <span class="hero-label anim-fade-down">
+          <span class="hero-label-dot"></span>Available for opportunities
+        </span>
+        <h1 class="hero-title anim-fade-up">
+          Hi, I'm <br class="d-none d-sm-block">
+          <span class="hero-name-typed">Alkan Zilgir</span>
+        </h1>
+        <div class="hero-pills anim-fade-up delay-1">
+          <span class="hero-pill"><i class="bi bi-code-slash"></i> Software Engineer</span>
+          <span class="hero-pill"><i class="bi bi-mortarboard"></i> AAB College</span>
+          <span class="hero-pill"><i class="bi bi-geo-alt"></i> Kosovo</span>
+        </div>
+        <p class="hero-sub anim-fade-up delay-2">
+          Building clean, purposeful software — one commit at a time.<br>
+          <span class="hero-sub-tech">Java &bull; Python &bull; C# &bull; PHP &bull; SQL &bull; HTML/CSS</span>
+        </p>
+        <div class="hero-btns anim-fade-up delay-3">
+          <a href="#projects" class="btn-solid"><i class="bi bi-grid-3x3-gap-fill me-2"></i>View Projects</a>
+          <a href="#contact" class="btn-ghost"><i class="bi bi-send me-2"></i>Get In Touch</a>
+        </div>
+        <div class="hero-socials anim-fade-up delay-4">
+          <a href="https://www.linkedin.com/in/alkan-zilgir-86615b37a/" target="_blank" rel="noopener" aria-label="LinkedIn" class="hero-soc"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener" aria-label="GitHub" class="hero-soc"><i class="bi bi-github"></i></a>
+          <a href="https://www.instagram.com/_alkanzilgir/" target="_blank" rel="noopener" aria-label="Instagram" class="hero-soc"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="scroll-cue anim-bounce" aria-hidden="true">
+          <span>scroll</span>
+          <i class="bi bi-chevron-compact-down"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS BAR -->
+  <div id="stats" class="stats-strip">
+    <div class="container">
+      <div class="row g-0 text-center">
+        <div class="col-6 col-md-3"><div class="stat-item"><span class="stat-num">8<sup>+</sup></span><span class="stat-lbl">Technologies</span></div></div>
+        <div class="col-6 col-md-3"><div class="stat-item"><span class="stat-num">3<sup>+</sup></span><span class="stat-lbl">Projects Built</span></div></div>
+        <div class="col-6 col-md-3"><div class="stat-item"><span class="stat-num">3<sup>+</sup></span><span class="stat-lbl">Years of Study</span></div></div>
+        <div class="col-6 col-md-3"><div class="stat-item"><span class="stat-num">4<sup>+</sup></span><span class="stat-lbl">Certifications</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="sec sec-white">
+    <div class="container">
+      <div class="sec-head text-center reveal">
+        <span class="sec-tag">Who I Am</span>
+        <h2 class="sec-title">About Me</h2>
+      </div>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-4 text-center reveal">
+          <div class="avatar-frame">
+            <div class="avatar-rings" aria-hidden="true">
+              <div class="ring r1"></div>
+              <div class="ring r2"></div>
+            </div>
+            <img src="images/me.jpeg" alt="Alkan Zilgir profile photo" class="avatar-img">
+          </div>
+          <a href="CV/Alkan_Zilgir _CV.pdf" class="btn-cv mt-4 d-inline-flex" download="Alkan_Zilgir_CV.pdf">
+            <i class="bi bi-file-earmark-pdf me-2"></i>Download CV
+          </a>
+        </div>
+        <div class="col-lg-8 reveal">
+          <article class="about-card" id="about-article">
+            <h3 class="about-name">Alkan Zilgir</h3>
+            <span class="about-role-badge">
+              <i class="bi bi-lightning-charge-fill me-1"></i>Software Engineering Student
+            </span>
+            <p class="about-txt mt-3">
+              I am a passionate <span class="hl">Software Engineering</span> student at
+              <strong>AAB College</strong>, focused on building clean, efficient and
+              user-friendly applications. I enjoy turning complex problems into elegant
+              solutions through code and thrive in collaborative environments.
+            </p>
+            <p class="about-txt">
+              My academic journey has given me a solid multi-language foundation like
+              Java, HTML, CSS, Python, C#, PHP, SQL and I continuously push myself to
+              learn modern tools, frameworks and best practices in software development.
+            </p>
+            <div class="row g-3 mt-1">
+              <div class="col-sm-6"><div class="info-tile"><i class="bi bi-mortarboard-fill info-ico"></i><div><span class="info-lbl">Studying</span><span class="info-val">BSc Software Engineering</span></div></div></div>
+              <div class="col-sm-6"><div class="info-tile"><i class="bi bi-building info-ico"></i><div><span class="info-lbl">Institution</span><span class="info-val">AAB College</span></div></div></div>
+              <div class="col-sm-6"><div class="info-tile"><i class="bi bi-geo-alt-fill info-ico"></i><div><span class="info-lbl">Location</span><span class="info-val">Kosovo</span></div></div></div>
+              <div class="col-sm-6"><div class="info-tile"><i class="bi bi-briefcase-fill info-ico"></i><div><span class="info-lbl">Status</span><span class="info-val">Open for job</span></div></div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="sec sec-blue">
+    <div class="container">
+      <div class="sec-head text-center reveal">
+        <span class="sec-tag sec-tag-light">What I Know</span>
+        <h2 class="sec-title text-white">Skills</h2>
+        <p class="sec-sub text-white-70">Languages, frameworks and tools I work with</p>
+      </div>
+
+      <!-- Skills Overview Table -->
+      <div class="tbl-wrapper reveal" id="skills-table-section">
+        <h3 class="tbl-title text-center mb-3">
+          <i class="bi bi-table me-2"></i>Skills Overview Table
+        </h3>
+        <div class="table-responsive">
+          <table class="table skills-table" id="skills-table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Technology</th>
+                <th scope="col">Category</th>
+                <th scope="col">Proficiency</th>
+                <th scope="col">Experience</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td><i class="bi bi-filetype-html me-2 text-acc"></i>HTML5 / CSS3</td><td><span class="bcat fe">Frontend</span></td><td>Advanced</td><td>3 years</td></tr>
+              <tr><td>2</td><td><i class="bi bi-filetype-java me-2 text-acc"></i>Java</td><td><span class="bcat be">Backend</span></td><td>Intermediate–Advanced</td><td>2 years</td></tr>
+              <tr><td>3</td><td><i class="bi bi-filetype-py me-2 text-acc"></i>Python</td><td><span class="bcat be">Backend</span></td><td>Intermediate</td><td>2 years</td></tr>
+              <tr><td>4</td><td><i class="bi bi-code-slash me-2 text-acc"></i>C#</td><td><span class="bcat be">Backend</span></td><td>Intermediate</td><td>1.5 years</td></tr>
+              <tr><td>5</td><td><i class="bi bi-database me-2 text-acc"></i>SQL / MySQL</td><td><span class="bcat db">Database</span></td><td>Intermediate–Advanced</td><td>2 years</td></tr>
+              <tr><td>6</td><td><i class="bi bi-filetype-js me-2 text-acc"></i>jQuery</td><td><span class="bcat fe">Frontend</span></td><td>Intermediate</td><td>1 year</td></tr>
+              <tr><td>7</td><td><i class="bi bi-filetype-php me-2 text-acc"></i>PHP</td><td><span class="bcat be">Backend</span></td><td>Beginner–Intermediate</td><td>1 year</td></tr>
+              <tr><td>8</td><td><i class="bi bi-bootstrap me-2 text-acc"></i>Bootstrap 5</td><td><span class="bcat fe">Frontend</span></td><td>Advanced</td><td>2 years</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="sec sec-white">
+    <div class="container">
+      <div class="sec-head text-center reveal">
+        <span class="sec-tag">My Work</span>
+        <h2 class="sec-title">Project Gallery</h2>
+        <p class="sec-sub">Handcrafted during my studies at AAB College</p>
+      </div>
+      <div class="row g-4" id="project-gallery">
+
+        <div class="col-sm-12 col-md-6 col-lg-4 reveal">
+          <article class="proj-card" id="project-travel">
+            <div class="proj-img-wrap">
+              <img src="https://placehold.co/640x400/1255a4/ddeeff?text=✈+Travel+Journal" alt="Travel Journal App screenshot" class="proj-img">
+              <div class="proj-hover-overlay">
+                <a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener" class="proj-ov-btn" aria-label="GitHub repo"><i class="bi bi-github"></i></a>
+                <a href="#" class="proj-ov-btn" aria-label="Live demo"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+              <span class="proj-badge">Web App</span>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Travel Journal App</h3>
+              <p class="proj-desc">A dynamic travel journal for logging destinations, uploading photos and writing personal travel stories — PHP/MySQL powered back-end.</p>
+              <div class="proj-tags"><span class="ptag">HTML/CSS</span><span class="ptag">PHP</span><span class="ptag">MySQL</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 reveal">
+          <article class="proj-card" id="project-ecommerce">
+            <div class="proj-img-wrap">
+              <img src="https://placehold.co/640x400/0d3f82/ddeeff?text=🛒+E-Commerce+Site" alt="E-commerce website screenshot" class="proj-img">
+              <div class="proj-hover-overlay">
+                <a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener" class="proj-ov-btn" aria-label="GitHub repo"><i class="bi bi-github"></i></a>
+                <a href="#" class="proj-ov-btn" aria-label="Live demo"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+              <span class="proj-badge">E-Commerce</span>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">E-Commerce Site</h3>
+              <p class="proj-desc">Full-featured online store with product listings, cart, authentication and payment flow — Bootstrap front-end, Java back-end.</p>
+              <div class="proj-tags"><span class="ptag">Java</span><span class="ptag">Bootstrap</span><span class="ptag">SQL</span></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 reveal">
+          <article class="proj-card" id="project-collatz">
+            <div class="proj-img-wrap">
+              <img src="https://placehold.co/640x400/072d63/ddeeff?text=📐+Collatz+Conjecture" alt="Collatz Conjecture PHP project" class="proj-img">
+              <div class="proj-hover-overlay">
+                <a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener" class="proj-ov-btn" aria-label="GitHub repo"><i class="bi bi-github"></i></a>
+                <a href="#" class="proj-ov-btn" aria-label="Live demo"><i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+              <span class="proj-badge">Algorithm</span>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Collatz Conjecture</h3>
+              <p class="proj-desc">Interactive PHP app visualising the Collatz sequence for any positive integer — recursive logic rendered step-by-step in the browser.</p>
+              <div class="proj-tags"><span class="ptag">PHP</span><span class="ptag">Algorithm</span><span class="ptag">Maths</span></div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="sec sec-white">
+    <div class="container">
+      <div class="sec-head text-center reveal">
+        <span class="sec-tag">Gallery</span>
+        <h2 class="sec-title">Photo Gallery</h2>
+        <p class="sec-sub">Projects, studies and Erasmus experience</p>
+      </div>
+      <div class="gallery-grid reveal">
+        <figure class="gal-item">
+          <img src="images/animegeeksite.png" alt="AnimeGeek E-Commerce project screenshot" class="gal-img">
+          <figcaption class="gal-cap">E-Commerce Project</figcaption>
+        </figure>
+        <figure class="gal-item">
+          <img src="images/siauliai_kolegija.jpg" alt="Siauliai State College Lithuania — Erasmus" class="gal-img">
+          <figcaption class="gal-cap">Erasmus — Šiaulių kolegija, Lithuania</figcaption>
+        </figure>
+        <figure class="gal-item">
+          <img src="images/collage_AAB.jpg" alt="AAB College Kosovo" class="gal-img">
+          <figcaption class="gal-cap">AAB College, Kosovo</figcaption>
+        </figure>
+        <figure class="gal-item">
+          <img src="https://placehold.co/600x400/1255a4/ddeeff?text=Travel+Journal+App" alt="Travel Journal App project screenshot" class="gal-img">
+          <figcaption class="gal-cap">Travel Journal App</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIA -->
+  <section id="media" class="sec sec-blue">
+    <div class="container">
+      <div class="sec-head text-center reveal">
+        <span class="sec-tag sec-tag-light">Featured</span>
+        <h2 class="sec-title text-white">Introduction Video</h2>
+        <p class="sec-sub text-white-70">A short walkthrough of my background and projects</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+          <!-- YouTube embed -->
+          <div class="video-wrap reveal">
+            <iframe
+              src="https://www.youtube.com/embed/q-_ezD9Swz4"
+              title="Portfolio Introduction Video"
+              class="embed-frame"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <!-- Local video -->
+          <div class="mt-4 reveal">
+            <div class="media-card">
+              <p class="media-cap">
+                <i class="bi bi-camera-video-fill me-2"></i>Travel Journal App Walkthrough
+              </p>
+              <video controls class="w-100 media-video">
+                <source src="video/projekti%20Travel%20Journal.mp4" type="video/mp4">
+                Your browser does not support the video element.
+              </video>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERESTS -->
+  <section id="interests" class="sec sec-white">
+    <div class="container">
+      <div class="sec-head text-center reveal">
+        <span class="sec-tag">More About Me</span>
+        <h2 class="sec-title">Goals &amp; Interests</h2>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-md-6 reveal">
+          <div class="list-card h-100">
+            <div class="list-card-hd">
+              <div class="list-icon-box"><i class="bi bi-trophy-fill"></i></div>
+              <h3 class="list-card-title">Professional Goals</h3>
+            </div>
+            <ol class="goals-ol">
+              <li>Graduate with distinction from AAB College</li>
+              <li>Land a junior developer role at a tech-forward company</li>
+              <li>Master full-stack frameworks (Spring Boot, React)</li>
+              <li>Contribute actively to open-source projects on GitHub</li>
+              <li>Earn cloud certifications (AWS / Azure)</li>
+              <li>Build a SaaS product that solves a real-world problem</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="col-md-6 reveal">
+          <div class="list-card h-100">
+            <div class="list-card-hd">
+              <div class="list-icon-box"><i class="bi bi-stars"></i></div>
+              <h3 class="list-card-title">Hobbies &amp; Interests</h3>
+            </div>
+            <ul class="hobbies-ul">
+              <li><i class="bi bi-controller"></i>Gaming &amp; game design</li>
+              <li><i class="bi bi-camera"></i>Photography &amp; travel documentation</li>
+              <li><i class="bi bi-book"></i>Reading &amp; research papers</li>
+              <li><i class="bi bi-music-note"></i>Rock &amp; jazz music while coding</li>
+              <li><i class="bi bi-bicycle"></i>Hiking and outdoor activities</li>
+              <li><i class="bi bi-translate"></i>Learning new languages</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline" class="sec sec-blue">
+    <div class="container">
+      <div class="sec-head text-center reveal">
+        <span class="sec-tag sec-tag-light">Credentials</span>
+        <h2 class="sec-title text-white">Education &amp; Certifications</h2>
+      </div>
+      <div class="tl-wrap">
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"><i class="bi bi-mortarboard-fill"></i></div>
+          <div class="tl-card">
+            <span class="tl-date">2021 – Present</span>
+            <h3 class="tl-title">BSc Software Engineering</h3>
+            <p class="tl-org"><i class="bi bi-building me-1"></i>AAB College, Kosovo</p>
+            <p class="tl-desc">Core modules: algorithms, data structures, OOP, databases, web development, and software engineering principles.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"><i class="bi bi-cup-hot-fill"></i></div>
+          <div class="tl-card">
+            <span class="tl-date">2020–2021</span>
+            <h3 class="tl-title">Java Programming</h3>
+            <p class="tl-org"><i class="bi bi-globe me-1"></i>Cacttus Education</p>
+            <p class="tl-desc">Core Java OOP, collections, exception handling, I/O and basic design patterns.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"><i class="bi bi-patch-check-fill"></i></div>
+          <div class="tl-card">
+            <span class="tl-date">2021–2022</span>
+            <h3 class="tl-title">Web Development Fundamentals</h3>
+            <p class="tl-org"><i class="bi bi-globe me-1"></i>Udemy Online Certification</p>
+            <p class="tl-desc">In-depth course covering C#.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"><i class="bi bi-database-fill-check"></i></div>
+          <div class="tl-card">
+            <span class="tl-date">2022–2023</span>
+            <h3 class="tl-title">SQL &amp; Database Design</h3>
+            <p class="tl-org"><i class="bi bi-globe me-1"></i>Online Certification</p>
+            <p class="tl-desc">Relational database design, advanced SQL queries, normalisation and MySQL.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"><i class="bi bi-cup-hot-fill"></i></div>
+          <div class="tl-card">
+            <span class="tl-date">2026–Present</span>
+            <h3 class="tl-title">BSc Software Engineering</h3>
+            <p class="tl-org"><i class="bi bi-globe me-1"></i>Šiaulių valstybinė kolegija</p>
+            <p class="tl-desc">HTML, CSS, Python, Bootstrap, MySQL, PHP, Algorithms, OOP, Database...</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="sec sec-white">
+    <div class="container">
+      <div class="sec-head text-center reveal">
+        <span class="sec-tag">Let's Talk</span>
+        <h2 class="sec-title">Contact Me</h2>
+        <p class="sec-sub">Have a project in mind or want to connect? Reach out!</p>
+      </div>
+      <div class="row g-5 align-items-start">
+
+        <div class="col-lg-4 reveal">
+          <div class="contact-panel">
+            <h3 class="cp-title"><i class="bi bi-chat-dots-fill me-2"></i>Get In Touch</h3>
+            <div class="cp-item">
+              <span class="cp-ico"><i class="bi bi-envelope-fill"></i></span>
+              <div><span class="cp-lbl">Email</span><a href="mailto:alkanzilgir@gmail.com" class="cp-val cp-email-link">alkanzilgir@gmail.com</a></div>
+            </div>
+            <div class="cp-item">
+              <span class="cp-ico"><i class="bi bi-geo-alt-fill"></i></span>
+              <div><span class="cp-lbl">Location</span><span class="cp-val">Kosovo</span></div>
+            </div>
+            <div class="cp-item">
+              <span class="cp-ico"><i class="bi bi-mortarboard-fill"></i></span>
+              <div><span class="cp-lbl">Institution</span><span class="cp-val">AAB College</span></div>
+            </div>
+            <div class="cp-item">
+              <span class="cp-ico"><i class="bi bi-clock-fill"></i></span>
+              <div><span class="cp-lbl">Response Time</span><span class="cp-val">Within 24 hours</span></div>
+            </div>
+            <div class="cp-socials mt-4">
+              <a href="https://www.linkedin.com/in/alkan-zilgir-86615b37a/" target="_blank" rel="noopener" class="cp-soc" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener" class="cp-soc" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.instagram.com/_alkanzilgir/" target="_blank" rel="noopener" class="cp-soc" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8 reveal">
+          <div class="contact-form-wrap">
+            <form id="contact-form" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="fName" class="form-label fc-lbl">Full Name <span class="req">*</span></label>
+                  <input type="text" id="fName" name="name" class="form-control fc" placeholder="e.g. John Doe"
+                         required minlength="2" maxlength="80"
+                         pattern="[A-Za-z\xC0-\xFF\s\-\x27]+"
+                         title="Letters, spaces and hyphens only.">
+                  <div class="invalid-feedback">Enter a valid name (at least 2 letters).</div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="fEmail" class="form-label fc-lbl">Email Address <span class="req">*</span></label>
+                  <input type="email" id="fEmail" name="email" class="form-control fc" placeholder="you@example.com"
+                         required
+                         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                         title="Enter a valid email address.">
+                  <div class="invalid-feedback">Enter a valid email address.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="fPhone" class="form-label fc-lbl">Phone <small class="text-muted">(optional)</small></label>
+                  <input type="number" id="fPhone" name="phone" class="form-control fc" placeholder="38344123456"
+                         min="10000" max="999999999999999" title="Enter country code + number, digits only.">
+                  <div class="invalid-feedback">Digits only (include country code).</div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="fSubject" class="form-label fc-lbl">Subject <span class="req">*</span></label>
+                  <select id="fSubject" name="subject" class="form-select fc" required>
+                    <option value="" disabled selected>Select a topic…</option>
+                    <option value="job">Job Opportunity</option>
+                    <option value="collab">Collaboration</option>
+                    <option value="project">Project Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a subject.</div>
+                </div>
+                <div class="col-12">
+                  <label for="fMessage" class="form-label fc-lbl">Message <span class="req">*</span></label>
+                  <textarea id="fMessage" name="message" class="form-control fc" rows="5"
+                            placeholder="Write your message here…"
+                            required minlength="20" maxlength="2000"
+                            title="Message must be at least 20 characters."></textarea>
+                  <div class="invalid-feedback">Message must be at least 20 characters long.</div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input fc-check" type="checkbox" id="fConsent" name="consent" required>
+                    <label class="form-check-label fc-lbl" for="fConsent">
+                      I agree that Alkan may use my contact details to reply to this message. <span class="req">*</span>
+                    </label>
+                    <div class="invalid-feedback">You must agree to proceed.</div>
+                  </div>
+                </div>
+                <div class="col-12 d-flex justify-content-end">
+                  <button type="submit" class="btn-solid btn-send">
+                    <i class="bi bi-send-fill me-2"></i>Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="site-footer">
+    <div class="footer-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,35 C240,70 480,0 720,35 C960,70 1200,0 1440,35 L1440,70 L0,70 Z" fill="#05234a"/>
+      </svg>
+    </div>
+    <div class="footer-body">
+      <div class="container">
+        <div class="row align-items-start gy-4">
+          <div class="col-md-4">
+            <span class="ft-brand">Alkan<span class="ft-acc"> Zilgir</span></span>
+            <p class="ft-tag mt-2">Software Engineering Student<br>AAB College &middot; Kosovo</p>
+          </div>
+          <div class="col-md-4 text-md-center">
+            <h3 class="ft-nav-title">Quick Links</h3>
+            <ul class="ft-nav">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#media">Media</a></li>
+              <li><a href="#interests">Interests</a></li>
+              <li><a href="#timeline">Timeline</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <h3 class="ft-nav-title">Connect</h3>
+            <div class="ft-socials">
+              <a href="https://www.linkedin.com/in/alkan-zilgir-86615b37a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.instagram.com/_alkanzilgir/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="ft-hr">
+        <p class="ft-bottom text-center mb-0">
+          &copy; <span id="year">2025</span> Alkan Zilgir &mdash; All rights reserved.
+          Built with <span class="ft-acc">Bootstrap 5</span> &amp; pure HTML5/CSS3.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmXKJeKrPvA4F0L9LB9uBQ5YoCMBrT"
+          crossorigin="anonymous"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    (function () {
+      'use strict';
+      document.getElementById('contact-form').addEventListener('submit', function (e) {
+        if (!this.checkValidity()) { e.preventDefault(); e.stopPropagation(); }
+        this.classList.add('was-validated');
+      }, false);
+    })();
+
+    window.addEventListener('scroll', function () {
+      document.getElementById('backToTop').classList.toggle('btt-show', window.scrollY > 450);
+    });
+
+    var revealEls = document.querySelectorAll('.reveal');
+    var revealObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('revealed'); revealObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(function (el) { revealObs.observe(el); });
+  </script>
+
+</body>
+</html>
