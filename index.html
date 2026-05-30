@@ -3,679 +3,652 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Alkan Zilgir – Full Stack Developer & Software Engineering student. Portfolio showcasing real-world projects in JavaScript, PHP, Laravel, Java, Python, SQL and more.">
-  <meta name="keywords" content="Alkan Zilgir, Full Stack Developer, Software Engineering, Portfolio, JavaScript, React, Laravel, PHP, Java, Python, SQL, MySQL, Firebase, Supabase, AAB College, Kosovo">
+  <meta name="description" content="Alkan Zilgir, full-stack developer and software engineering student. Portfolio of working projects in JavaScript, PHP, Laravel, Java, Python and SQL.">
+  <meta name="keywords" content="Alkan Zilgir, Full Stack Developer, Portfolio, JavaScript, React, Laravel, PHP, Java, Python, SQL, Kosovo, AAB College">
   <meta name="author" content="Alkan Zilgir">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Alkan Zilgir | Full Stack Developer Portfolio">
-  <meta property="og:description" content="Portfolio of Alkan Zilgir – Full Stack Developer & Software Engineering student.">
+  <meta name="theme-color" content="#f7f5f1">
+  <meta property="og:title" content="Alkan Zilgir, Full-Stack Developer">
+  <meta property="og:description" content="Portfolio of real projects in JS, Laravel, Java, Python and more.">
   <meta property="og:type" content="website">
-
-  <link rel="icon" type="image/png" href="https://placehold.co/32x32/1255a4/ffffff?text=AZ">
-  <title>Alkan Zilgir | Full Stack Developer Portfolio</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta property="og:image" content="images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Alkan Zilgir, full-stack developer portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alkan Zilgir, Full-Stack Developer">
+  <meta name="twitter:description" content="Portfolio of real projects in JS, Laravel, Java, Python and more.">
+  <meta name="twitter:image" content="images/og-image.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" type="image/png" href="favicon.svg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <title>Alkan Zilgir, Full-Stack Developer</title>
 </head>
-
 <body>
 
-  <!-- BACK TO TOP -->
-  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
-    <i class="bi bi-arrow-up-short"></i>
-  </a>
-
-  <!-- NAVBAR -->
-  <header id="site-header">
-    <nav class="navbar navbar-expand-lg navbar-custom sticky-top" aria-label="Main navigation">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
-          <span class="brand-badge">AZ</span>
-          <span class="brand-name">Alkan<span class="brand-accent"> Zilgir</span></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="bi bi-list toggler-icon"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-1 align-items-lg-center">
-            <li class="nav-item"><a class="nav-link nav-link-custom" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link nav-link-custom" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link nav-link-custom" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link nav-link-custom" href="#gallery">Gallery</a></li>
-            
-            <li class="nav-item"><a class="nav-link nav-link-custom" href="#interests">Interests</a></li>
-            <li class="nav-item"><a class="nav-link nav-link-custom" href="#timeline">Timeline</a></li>
-            <li class="nav-item ms-lg-2">
-              <a class="nav-cta" href="#contact"><i class="bi bi-envelope-fill me-1"></i>Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="nav-brand" data-magnetic data-cursor="link">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Alkan Zilgir</span>
+        <span class="brand-sub mono">/ 2026</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="#work"     data-cursor="link"><span class="num mono">01</span><span>Work</span></a></li>
+          <li><a class="nav-link" href="#about"    data-cursor="link"><span class="num mono">02</span><span>About</span></a></li>
+          <li><a class="nav-link" href="#skills"   data-cursor="link"><span class="num mono">03</span><span>Stack</span></a></li>
+          <li><a class="nav-link" href="#timeline" data-cursor="link"><span class="num mono">04</span><span>Path</span></a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="nav-cta" data-magnetic data-cursor="link">
+        Say hi
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <i class="bi bi-list" aria-hidden="true" style="font-size:1.4rem"></i>
+      </button>
+    </div>
   </header>
 
   <!-- HERO -->
-  <div id="hero" class="hero-section">
-    <div class="hero-grid" aria-hidden="true"></div>
-    <div class="orb orb-1" aria-hidden="true"></div>
-    <div class="orb orb-2" aria-hidden="true"></div>
-    <div class="orb orb-3" aria-hidden="true"></div>
-    <div class="orb orb-4" aria-hidden="true"></div>
-    <div class="particle p1" aria-hidden="true"></div>
-    <div class="particle p2" aria-hidden="true"></div>
-    <div class="particle p3" aria-hidden="true"></div>
-    <div class="particle p4" aria-hidden="true"></div>
-    <div class="particle p5" aria-hidden="true"></div>
-    <div class="particle p6" aria-hidden="true"></div>
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
 
-    <div class="hero-content">
-      <div class="container text-center">
-        <span class="hero-label anim-fade-down">
-          <span class="hero-label-dot"></span>Available for opportunities
-        </span>
-        <h1 class="hero-title anim-fade-up">
-          Hi, I'm <br class="d-none d-sm-block">
-          <span class="hero-name-typed">Alkan Zilgir</span>
+      <header class="hero-masthead">
+        <div class="eyebrow-mono mono">
+          PORTFOLIO &nbsp;·&nbsp; ISSUE 01 &nbsp;·&nbsp; MMXXVI
+        </div>
+        <div class="hero-issue">
+          <span><strong>Prishtina</strong> &mdash; <strong>Šiauliai</strong></span>
+          <span>53.92° N &nbsp; · &nbsp; 23.31° E</span>
+        </div>
+      </header>
+
+      <div>
+        <h1 class="hero-title" data-split>
+          Alkan Zilgir,<br>
+          <em>building things</em><br>
+          on both sides.
         </h1>
-        <div class="hero-pills anim-fade-up delay-1">
-          <span class="hero-pill"><i class="bi bi-code-slash"></i> Full Stack Developer</span>
-          <span class="hero-pill"><i class="bi bi-mortarboard"></i> AAB College</span>
-          <span class="hero-pill"><i class="bi bi-globe-europe-africa"></i> Erasmus — Lithuania</span>
-          <span class="hero-pill"><i class="bi bi-geo-alt"></i> Kosovo</span>
-        </div>
-        <p class="hero-sub anim-fade-up delay-2">
-          Building clean, purposeful software — one commit at a time.<br>
-          <span class="hero-sub-tech">JavaScript &bull; React &bull; PHP &bull; Laravel &bull; Java &bull; Python &bull; SQL &bull; Firebase &bull; Supabase</span>
-        </p>
-        <div class="hero-btns anim-fade-up delay-3">
-          <a href="#projects" class="btn-solid"><i class="bi bi-grid-3x3-gap-fill me-2"></i>View Projects</a>
-          <a href="#contact" class="btn-ghost"><i class="bi bi-send me-2"></i>Get In Touch</a>
-        </div>
-        <div class="hero-socials anim-fade-up delay-4">
-          <a href="https://www.linkedin.com/in/alkan-zilgir-86615b37a/" target="_blank" rel="noopener" aria-label="LinkedIn" class="hero-soc"><i class="bi bi-linkedin"></i></a>
-          <a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener" aria-label="GitHub" class="hero-soc"><i class="bi bi-github"></i></a>
-          <a href="https://www.instagram.com/_alkanzilgir/" target="_blank" rel="noopener" aria-label="Instagram" class="hero-soc"><i class="bi bi-instagram"></i></a>
-        </div>
-        <div class="scroll-cue anim-bounce" aria-hidden="true">
-          <span>scroll</span>
-          <i class="bi bi-chevron-compact-down"></i>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- STATS BAR -->
-  <div id="stats" class="stats-strip">
-    <div class="container">
-      <div class="row g-0 text-center">
-        <div class="col-6 col-md-3"><div class="stat-item"><span class="stat-num">15<sup>+</sup></span><span class="stat-lbl">Technologies</span></div></div>
-        <div class="col-6 col-md-3"><div class="stat-item"><span class="stat-num">6<sup>+</sup></span><span class="stat-lbl">Projects Built</span></div></div>
-        <div class="col-6 col-md-3"><div class="stat-item"><span class="stat-num">2<sup>+</sup></span><span class="stat-lbl">Years Coding</span></div></div>
-        <div class="col-6 col-md-3"><div class="stat-item"><span class="stat-num">4<sup>+</sup></span><span class="stat-lbl">Certifications</span></div></div>
+        <div class="hero-body">
+          <p class="hero-tagline">
+            Software engineering student, full-stack by habit. Writing real code instead of reading about it.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary" data-magnetic data-cursor="link">
+              See the work <span class="arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#contact" class="btn btn-ghost" data-magnetic data-cursor="link">
+              Get in touch
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <footer class="hero-meta">
+        <div class="hero-meta-row">
+          <span class="ind" aria-hidden="true"></span>
+          <span>Available <strong>summer 2026</strong></span>
+        </div>
+        <div class="hero-meta-row" style="margin-left:auto">
+          <a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener" data-cursor="link" style="color:var(--ink)">GitHub ↗</a>
+          <span style="color:var(--rule-strong)">·</span>
+          <a href="https://www.linkedin.com/in/alkan-zilgir-86615b37a/" target="_blank" rel="noopener" data-cursor="link" style="color:var(--ink)">LinkedIn ↗</a>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- Marquee strip -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">JavaScript<span class="sep"></span>React<span class="sep"></span>PHP<span class="sep"></span>Laravel<span class="sep"></span>Java<span class="sep"></span>Python<span class="sep"></span>SQL<span class="sep"></span>Firebase<span class="sep"></span>Supabase<span class="sep"></span>Stripe<span class="sep"></span>PWA<span class="sep"></span></span>
+        <span class="marquee-item">JavaScript<span class="sep"></span>React<span class="sep"></span>PHP<span class="sep"></span>Laravel<span class="sep"></span>Java<span class="sep"></span>Python<span class="sep"></span>SQL<span class="sep"></span>Firebase<span class="sep"></span>Supabase<span class="sep"></span>Stripe<span class="sep"></span>PWA<span class="sep"></span></span>
       </div>
     </div>
-  </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="section">
+    <div class="wrap">
+      <header class="section-head">
+        <div class="section-num mono">
+          <span>SECTION</span>
+          <strong>01</strong>
+        </div>
+        <div>
+          <h2 class="section-title" data-reveal>Selected <em>work</em>.</h2>
+          <p class="section-lede" data-reveal>
+            Real projects, all on GitHub. Mostly built outside class, mostly shipped.
+          </p>
+        </div>
+      </header>
+
+      <div class="work-grid">
+
+        <article class="work-item is-featured" data-reveal data-cursor="link">
+          <div class="work-frame">
+            <img src="images/athleteos.png" alt="AthleteOS fitness PWA dashboard" width="800" height="450" loading="lazy" decoding="async">
+            <span class="work-badge"><span class="dot"></span> Live PWA</span>
+            <div class="work-actions">
+              <a class="work-action" href="https://github.com/AlkanZilgir/athleteos" target="_blank" rel="noopener" aria-label="GitHub repo for AthleteOS" data-cursor="link"><i class="bi bi-github"></i></a>
+              <a class="work-action" href="https://alkanzilgir.github.io/athleteos/" target="_blank" rel="noopener" aria-label="Open AthleteOS" data-cursor="link"><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="work-num mono"><strong>01</strong> · 2025</span>
+            <span class="mono">Fitness PWA · Supabase · Stripe</span>
+          </div>
+          <h3 class="work-title">AthleteOS, an <em>everyday training</em> companion.</h3>
+          <p class="work-desc">
+            A full-featured fitness PWA covering workouts, nutrition, sleep and body composition. Supabase backend, AI-assisted coaching, Stripe payments, Google OAuth, offline support and push notifications.
+          </p>
+          <div class="work-tags">
+            <span class="work-tag">JavaScript</span>
+            <span class="work-tag">Supabase</span>
+            <span class="work-tag">Stripe</span>
+            <span class="work-tag">PWA</span>
+            <span class="work-tag">Service Workers</span>
+          </div>
+        </article>
+
+        <article class="work-item is-half" data-reveal data-cursor="link">
+          <div class="work-frame">
+            <img src="images/financetracker.png" alt="Finance Tracker Laravel application" width="800" height="450" loading="lazy" decoding="async">
+            <span class="work-badge"><span class="dot"></span> Laravel</span>
+            <div class="work-actions">
+              <a class="work-action" href="https://github.com/AlkanZilgir/finance-tracker" target="_blank" rel="noopener" aria-label="GitHub repo for Finance Tracker" data-cursor="link"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="work-num mono"><strong>02</strong> · 2025</span>
+            <span class="mono">Web App · MySQL · CI/CD</span>
+          </div>
+          <h3 class="work-title">Finance Tracker.</h3>
+          <p class="work-desc">
+            A full-stack expense and budgeting app in Laravel. Migrations, unit tests, Tailwind UI, data viz and a GitHub Actions CI pipeline that actually runs on every push.
+          </p>
+          <div class="work-tags">
+            <span class="work-tag">Laravel</span>
+            <span class="work-tag">PHP</span>
+            <span class="work-tag">MySQL</span>
+            <span class="work-tag">Tailwind</span>
+          </div>
+        </article>
+
+        <article class="work-item is-half" data-reveal data-cursor="link">
+          <div class="work-frame">
+            <img src="images/boardroyal.png" alt="Board Royal multiplayer board game" width="800" height="450" loading="lazy" decoding="async">
+            <span class="work-badge"><span class="dot"></span> Multiplayer</span>
+            <div class="work-actions">
+              <a class="work-action" href="https://github.com/AlkanZilgir/Royal" target="_blank" rel="noopener" aria-label="GitHub repo for Board Royal" data-cursor="link"><i class="bi bi-github"></i></a>
+              <a class="work-action" href="https://alkanzilgir.github.io/Royal/" target="_blank" rel="noopener" aria-label="Open Board Royal" data-cursor="link"><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="work-num mono"><strong>03</strong> · 2024</span>
+            <span class="mono">Games · Firebase</span>
+          </div>
+          <h3 class="work-title">Board Royal.</h3>
+          <p class="work-desc">
+            Five board games in one PWA, with a full chess engine (castling, en passant, pawn promotion). Firebase Realtime Database carries the online play and auth.
+          </p>
+          <div class="work-tags">
+            <span class="work-tag">JavaScript</span>
+            <span class="work-tag">Firebase</span>
+            <span class="work-tag">PWA</span>
+          </div>
+        </article>
+
+        <article class="work-item is-half" data-reveal data-cursor="link">
+          <div class="work-frame">
+            <img src="images/cloudvault.png" alt="Cloud Vault personal storage PWA" width="800" height="450" loading="lazy" decoding="async">
+            <span class="work-badge"><span class="dot"></span> PWA</span>
+            <div class="work-actions">
+              <a class="work-action" href="https://github.com/AlkanZilgir/cloud-vault-" target="_blank" rel="noopener" aria-label="GitHub repo for Cloud Vault" data-cursor="link"><i class="bi bi-github"></i></a>
+              <a class="work-action" href="https://alkanzilgir.github.io/cloud-vault-/" target="_blank" rel="noopener" aria-label="Open Cloud Vault" data-cursor="link"><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="work-num mono"><strong>04</strong> · 2024</span>
+            <span class="mono">Storage · Cloudinary</span>
+          </div>
+          <h3 class="work-title">Cloud Vault.</h3>
+          <p class="work-desc">
+            A personal cloud storage PWA backed by Cloudinary. Upload photos, videos and documents from anywhere, works offline, installs on mobile.
+          </p>
+          <div class="work-tags">
+            <span class="work-tag">JavaScript</span>
+            <span class="work-tag">Cloudinary</span>
+            <span class="work-tag">Service Workers</span>
+          </div>
+        </article>
+
+        <article class="work-item is-half" data-reveal data-cursor="link">
+          <div class="work-frame">
+            <img src="images/animegeeksite.png" alt="AnimeGeek e-commerce site" width="800" height="450" loading="lazy" decoding="async">
+            <span class="work-badge"><span class="dot"></span> E‑Commerce</span>
+            <div class="work-actions">
+              <a class="work-action" href="https://github.com/AlkanZilgir/animeengeek" target="_blank" rel="noopener" aria-label="GitHub repo for AnimeGeek" data-cursor="link"><i class="bi bi-github"></i></a>
+              <a class="work-action" href="https://alkanzilgir.github.io/animeengeek/" target="_blank" rel="noopener" aria-label="Open AnimeGeek" data-cursor="link"><i class="bi bi-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="work-num mono"><strong>05</strong> · 2023</span>
+            <span class="mono">Shop · Bootstrap</span>
+          </div>
+          <h3 class="work-title">AnimeGeek.</h3>
+          <p class="work-desc">
+            A small e-commerce front for anime accessories: product listings, cart, wishlist, Instagram integration, dark UI with hand-rolled animations.
+          </p>
+          <div class="work-tags">
+            <span class="work-tag">HTML / CSS</span>
+            <span class="work-tag">JavaScript</span>
+            <span class="work-tag">Bootstrap</span>
+          </div>
+        </article>
+
+        <article class="work-item is-half" data-reveal data-cursor="link">
+          <div class="work-frame">
+            <img src="images/user.png" alt="User Management System interface" width="800" height="450" loading="lazy" decoding="async">
+            <span class="work-badge"><span class="dot"></span> Backend</span>
+            <div class="work-actions">
+              <a class="work-action" href="https://github.com/AlkanZilgir/user-management" target="_blank" rel="noopener" aria-label="GitHub repo for User Management" data-cursor="link"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="work-num mono"><strong>06</strong> · 2023</span>
+            <span class="mono">Auth · PHP OOP · MySQL</span>
+          </div>
+          <h3 class="work-title">User Management System.</h3>
+          <p class="work-desc">
+            A full-stack auth system with admin and user roles, bcrypt hashing and MySQL. Built using PHP OOP fundamentals: abstract classes, interfaces, traits, namespaces.
+          </p>
+          <div class="work-tags">
+            <span class="work-tag">PHP OOP</span>
+            <span class="work-tag">MySQL</span>
+            <span class="work-tag">PDO</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
 
   <!-- ABOUT -->
-  <section id="about" class="sec sec-white">
-    <div class="container">
-      <div class="sec-head text-center reveal">
-        <span class="sec-tag">Who I Am</span>
-        <h2 class="sec-title">About Me</h2>
-      </div>
-      <div class="row align-items-center g-5">
-        <div class="col-lg-4 text-center reveal">
-          <div class="avatar-frame">
-            <div class="avatar-rings" aria-hidden="true">
-              <div class="ring r1"></div>
-              <div class="ring r2"></div>
-            </div>
-            <img src="images/me.jpeg" alt="Alkan Zilgir profile photo" class="avatar-img">
+  <section id="about" class="section">
+    <div class="wrap">
+      <header class="section-head">
+        <div class="section-num mono">
+          <span>SECTION</span>
+          <strong>02</strong>
+        </div>
+        <div>
+          <h2 class="section-title" data-reveal>A short <em>introduction</em>.</h2>
+        </div>
+      </header>
+
+      <div class="about-grid">
+        <figure class="about-portrait" data-reveal data-cursor="text">
+          <img src="images/me.jpeg" alt="Portrait of Alkan Zilgir" width="1024" height="1024" decoding="async" fetchpriority="high">
+          <figcaption class="about-portrait-cap">
+            <span>A. Zilgir</span>
+            <span>Prishtina · 2026</span>
+          </figcaption>
+        </figure>
+
+        <div class="about-text">
+          <p class="about-lead" data-reveal>
+            I just really like making things, and the slow, messy fun of turning them into <span class="accent">real projects</span>.
+          </p>
+
+          <div class="about-prose" data-reveal>
+            <p>
+              I started writing code in 2020, on a Java course in Prishtina I signed up for mostly because a friend was going. Six years on, it's the thing I keep coming back to.
+            </p>
+            <p>
+              I'm now in my third year of Software Engineering at <strong>AAB College</strong>, doing a semester at <strong>Šiaulių kolegija</strong> in Lithuania. Most of what's on this page started the same way: something I wanted to build for myself, that eventually turned into a real project.
+            </p>
+            <p>
+              If you want to see what else I'm up to, I'm on <a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener">GitHub</a>, <a href="https://www.linkedin.com/in/alkan-zilgir-86615b37a/" target="_blank" rel="noopener">LinkedIn</a> and <a href="https://www.instagram.com/_alkanzilgir/" target="_blank" rel="noopener">Instagram</a>.
+            </p>
           </div>
-          <a href="CV/Alkan_Zilgir_CV.pdf" class="btn-cv mt-4 d-inline-flex" download="Alkan_Zilgir_CV.pdf">
-            <i class="bi bi-file-earmark-pdf me-2"></i>Download CV
+
+          <dl class="about-facts" data-reveal>
+            <div class="about-fact">
+              <dt class="about-fact-lbl mono">DEGREE</dt>
+              <dd class="about-fact-val">BSc Software Engineering</dd>
+            </div>
+            <div class="about-fact">
+              <dt class="about-fact-lbl mono">SCHOOL</dt>
+              <dd class="about-fact-val">AAB College, Kosovo</dd>
+            </div>
+            <div class="about-fact">
+              <dt class="about-fact-lbl mono">ALSO AT</dt>
+              <dd class="about-fact-val">Šiaulių kolegija, Lithuania</dd>
+            </div>
+            <div class="about-fact">
+              <dt class="about-fact-lbl mono">STATUS</dt>
+              <dd class="about-fact-val">Open for opportunities</dd>
+            </div>
+          </dl>
+
+          <dl class="about-langs" data-reveal>
+            <dt class="about-fact-lbl mono">LANGUAGES</dt>
+            <dd class="about-langs-list">
+              <span class="lang">Albanian <span class="lang-lvl mono">native</span></span>
+              <span class="lang">Turkish <span class="lang-lvl mono">native</span></span>
+              <span class="lang">English <span class="lang-lvl mono">C1</span></span>
+            </dd>
+          </dl>
+
+          <a href="CV/Alkan_Zilgir_CV.pdf" class="about-cv" download="Alkan_Zilgir_CV.pdf" data-cursor="link" data-magnetic>
+            <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+            Download CV (PDF)
+            <span class="arrow" aria-hidden="true">↗</span>
           </a>
         </div>
-        <div class="col-lg-8 reveal">
-          <article class="about-card" id="about-article">
-            <h3 class="about-name">Alkan Zilgir</h3>
-            <span class="about-role-badge">
-              <i class="bi bi-lightning-charge-fill me-1"></i>Full Stack Developer
-            </span>
-            <p class="about-txt mt-3">
-              Software engineering student from Prishtina building things on both sides of the stack. Currently studying at <strong>AAB College</strong> while also completing an <span class="hl">Erasmus exchange semester</span> at Šiaulių kolegija in Lithuania.
-            </p>
-            <p class="about-txt">
-              I spend most of my free time building real projects — from PWAs with AI coaching and Stripe payments to multiplayer board games and full Laravel applications. Comfortable from putting together a frontend to wiring up a backend with proper auth and a database.
-            </p>
-            <div class="row g-3 mt-1">
-              <div class="col-sm-6"><div class="info-tile"><i class="bi bi-mortarboard-fill info-ico"></i><div><span class="info-lbl">Studying</span><span class="info-val">BSc Software Engineering</span></div></div></div>
-              <div class="col-sm-6"><div class="info-tile"><i class="bi bi-building info-ico"></i><div><span class="info-lbl">Institution</span><span class="info-val">AAB College, Kosovo</span></div></div></div>
-              <div class="col-sm-6"><div class="info-tile"><i class="bi bi-globe-europe-africa info-ico"></i><div><span class="info-lbl">Exchange</span><span class="info-val">Šiaulių kolegija, Lithuania</span></div></div></div>
-              <div class="col-sm-6"><div class="info-tile"><i class="bi bi-briefcase-fill info-ico"></i><div><span class="info-lbl">Status</span><span class="info-val">Open for opportunities</span></div></div></div>
-            </div>
-          </article>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="sec sec-blue">
-    <div class="container">
-      <div class="sec-head text-center reveal">
-        <span class="sec-tag sec-tag-light">What I Know</span>
-        <h2 class="sec-title text-white">Skills</h2>
-        <p class="sec-sub text-white-70">Languages, frameworks and tools I work with</p>
-      </div>
-      <div class="tbl-wrapper reveal" id="skills-table-section">
-        <h3 class="tbl-title text-center mb-3">
-          <i class="bi bi-table me-2"></i>Skills Overview Table
-        </h3>
-        <div class="table-responsive">
-          <table class="table skills-table" id="skills-table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Technology</th>
-                <th scope="col">Category</th>
-                <th scope="col">Proficiency</th>
-                <th scope="col">Experience</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>1</td><td><i class="bi bi-filetype-html me-2 text-acc"></i>HTML5 / CSS3</td><td><span class="bcat fe">Frontend</span></td><td>Advanced</td><td>3 years</td></tr>
-              <tr><td>2</td><td><i class="bi bi-filetype-js me-2 text-acc"></i>JavaScript</td><td><span class="bcat fe">Frontend</span></td><td>Intermediate–Advanced</td><td>2 years</td></tr>
-              <tr><td>3</td><td><i class="bi bi-bootstrap me-2 text-acc"></i>Bootstrap 5</td><td><span class="bcat fe">Frontend</span></td><td>Advanced</td><td>2 years</td></tr>
-              <tr><td>4</td><td><i class="bi bi-code-slash me-2 text-acc"></i>React</td><td><span class="bcat fe">Frontend</span></td><td>Intermediate</td><td>1 year</td></tr>
-              <tr><td>5</td><td><i class="bi bi-code-slash me-2 text-acc"></i>Vue</td><td><span class="bcat fe">Frontend</span></td><td>Beginner–Intermediate</td><td>1 year</td></tr>
-              <tr><td>6</td><td><i class="bi bi-filetype-php me-2 text-acc"></i>PHP / Laravel</td><td><span class="bcat be">Backend</span></td><td>Intermediate–Advanced</td><td>2 years</td></tr>
-              <tr><td>7</td><td><i class="bi bi-filetype-java me-2 text-acc"></i>Java</td><td><span class="bcat be">Backend</span></td><td>Intermediate–Advanced</td><td>2 years</td></tr>
-              <tr><td>8</td><td><i class="bi bi-filetype-py me-2 text-acc"></i>Python</td><td><span class="bcat be">Backend</span></td><td>Intermediate</td><td>2 years</td></tr>
-              <tr><td>9</td><td><i class="bi bi-code-slash me-2 text-acc"></i>C# / C++</td><td><span class="bcat be">Backend</span></td><td>Intermediate</td><td>1.5 years</td></tr>
-              <tr><td>10</td><td><i class="bi bi-database me-2 text-acc"></i>SQL / MySQL</td><td><span class="bcat db">Database</span></td><td>Intermediate–Advanced</td><td>2 years</td></tr>
-              <tr><td>11</td><td><i class="bi bi-cloud me-2 text-acc"></i>Firebase</td><td><span class="bcat db">Database</span></td><td>Intermediate</td><td>1 year</td></tr>
-              <tr><td>12</td><td><i class="bi bi-cloud me-2 text-acc"></i>Supabase</td><td><span class="bcat db">Database</span></td><td>Intermediate</td><td>1 year</td></tr>
-              <tr><td>13</td><td><i class="bi bi-git me-2 text-acc"></i>Git / GitHub</td><td><span class="bcat tl">Tools</span></td><td>Intermediate–Advanced</td><td>2 years</td></tr>
-              <tr><td>14</td><td><i class="bi bi-terminal me-2 text-acc"></i>Linux</td><td><span class="bcat tl">Tools</span></td><td>Intermediate</td><td>1.5 years</td></tr>
-              <tr><td>15</td><td><i class="bi bi-phone me-2 text-acc"></i>PWA / Service Workers</td><td><span class="bcat tl">Tools</span></td><td>Intermediate</td><td>1 year</td></tr>
-            </tbody>
-          </table>
+  <!-- SKILLS / STACK -->
+  <section id="skills" class="section">
+    <div class="wrap">
+      <header class="section-head">
+        <div class="section-num mono">
+          <span>SECTION</span>
+          <strong>03</strong>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="sec sec-white">
-    <div class="container">
-      <div class="sec-head text-center reveal">
-        <span class="sec-tag">My Work</span>
-        <h2 class="sec-title">Project Gallery</h2>
-        <p class="sec-sub">Real projects built outside of class — available on GitHub</p>
-      </div>
-      <div class="row g-4" id="project-gallery">
-
-        <div class="col-sm-12 col-md-6 col-lg-4 reveal">
-          <article class="proj-card">
-            <div class="proj-img-wrap">
-              <img src="images/athleteos.png" alt="AthleteOS fitness PWA" class="proj-img">
-              <div class="proj-hover-overlay">
-                <a href="https://github.com/AlkanZilgir/athleteos" target="_blank" rel="noopener" class="proj-ov-btn" aria-label="GitHub repo"><i class="bi bi-github"></i></a>
-                <a href="https://alkanzilgir.github.io/athleteos/" target="_blank" rel="noopener" class="proj-ov-btn" aria-label="Live demo"><i class="bi bi-box-arrow-up-right"></i></a>
-              </div>
-              <span class="proj-badge">PWA</span>
-            </div>
-            <div class="proj-body">
-              <h3 class="proj-title">AthleteOS</h3>
-              <p class="proj-desc">Full-featured fitness PWA — workouts, nutrition, sleep & body composition. Supabase backend, AI coaching, Stripe payments, Google OAuth, offline support and push notifications.</p>
-              <div class="proj-tags"><span class="ptag">JavaScript</span><span class="ptag">Supabase</span><span class="ptag">Stripe</span><span class="ptag">PWA</span></div>
-            </div>
-          </article>
+        <div>
+          <h2 class="section-title" data-reveal>The <em>stack</em>.</h2>
+          <p class="section-lede" data-reveal>
+            What I actually reach for. Bold means I use it without thinking about it.
+          </p>
         </div>
+      </header>
 
-        <div class="col-sm-12 col-md-6 col-lg-4 reveal">
-          <article class="proj-card">
-            <div class="proj-img-wrap">
-              <img src="images/financetracker.png" alt="Finance Tracker Laravel app" class="proj-img">
-              <div class="proj-hover-overlay">
-                <a href="https://github.com/AlkanZilgir/finance-tracker" target="_blank" rel="noopener" class="proj-ov-btn" aria-label="GitHub repo"><i class="bi bi-github"></i></a>
-              </div>
-              <span class="proj-badge">Laravel</span>
-            </div>
-            <div class="proj-body">
-              <h3 class="proj-title">Finance Tracker</h3>
-              <p class="proj-desc">Full-stack finance web app built with Laravel. Expense management, data visualisation, Tailwind CSS, database migrations, unit tests, and a GitHub Actions CI pipeline.</p>
-              <div class="proj-tags"><span class="ptag">Laravel</span><span class="ptag">PHP</span><span class="ptag">MySQL</span><span class="ptag">Tailwind</span></div>
-            </div>
-          </article>
-        </div>
+      <div class="skills-columns" data-reveal>
 
-        <div class="col-sm-12 col-md-6 col-lg-4 reveal">
-          <article class="proj-card">
-            <div class="proj-img-wrap">
-              <img src="images/boardroyal.png" alt="Board Royal multiplayer game PWA" class="proj-img">
-              <div class="proj-hover-overlay">
-                <a href="https://github.com/AlkanZilgir/Royal" target="_blank" rel="noopener" class="proj-ov-btn" aria-label="GitHub repo"><i class="bi bi-github"></i></a>
-                <a href="https://alkanzilgir.github.io/Royal/" target="_blank" rel="noopener" class="proj-ov-btn" aria-label="Live demo"><i class="bi bi-box-arrow-up-right"></i></a>
-              </div>
-              <span class="proj-badge">Multiplayer</span>
-            </div>
-            <div class="proj-body">
-              <h3 class="proj-title">Board Royal</h3>
-              <p class="proj-desc">Multiplayer board game PWA with 5 games including a full chess engine (castling, en passant, pawn promotion). Firebase Realtime Database for online play and auth.</p>
-              <div class="proj-tags"><span class="ptag">JavaScript</span><span class="ptag">Firebase</span><span class="ptag">PWA</span></div>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4 reveal">
-          <article class="proj-card">
-            <div class="proj-img-wrap">
-              <img src="images/animegeeksite.png" alt="AnimeEngeek e-commerce website" class="proj-img">
-              <div class="proj-hover-overlay">
-                <a href="https://github.com/AlkanZilgir/animeengeek" target="_blank" rel="noopener" class="proj-ov-btn" aria-label="GitHub repo"><i class="bi bi-github"></i></a>
-                <a href="https://alkanzilgir.github.io/animeengeek/" target="_blank" rel="noopener" class="proj-ov-btn" aria-label="Live demo"><i class="bi bi-box-arrow-up-right"></i></a>
-              </div>
-              <span class="proj-badge">E-Commerce</span>
-            </div>
-            <div class="proj-body">
-              <h3 class="proj-title">AnimeEngeek</h3>
-              <p class="proj-desc">E-commerce site for anime accessories — product listings, shopping cart, wishlist, and Instagram integration. Clean dark UI with custom animations.</p>
-              <div class="proj-tags"><span class="ptag">HTML/CSS</span><span class="ptag">JavaScript</span><span class="ptag">Bootstrap</span></div>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4 reveal">
-          <article class="proj-card">
-            <div class="proj-img-wrap">
-              <img src="images/user.png" alt="User Management System PHP" class="proj-img">
-              <div class="proj-hover-overlay">
-                <a href="https://github.com/AlkanZilgir/user-management" target="_blank" rel="noopener" class="proj-ov-btn" aria-label="GitHub repo"><i class="bi bi-github"></i></a>
-              </div>
-              <span class="proj-badge">Backend</span>
-            </div>
-            <div class="proj-body">
-              <h3 class="proj-title">User Management System</h3>
-              <p class="proj-desc">Full stack auth system with admin and user roles, bcrypt password hashing and MySQL. Built using PHP OOP: abstract classes, interfaces, traits and namespaces.</p>
-              <div class="proj-tags"><span class="ptag">PHP OOP</span><span class="ptag">MySQL</span><span class="ptag">PDO</span></div>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4 reveal">
-          <article class="proj-card">
-            <div class="proj-img-wrap">
-              <img src="images/cloudvault.png" alt="Cloud Vault PWA" class="proj-img">
-              <div class="proj-hover-overlay">
-                <a href="https://github.com/AlkanZilgir/cloud-vault-" target="_blank" rel="noopener" class="proj-ov-btn" aria-label="GitHub repo"><i class="bi bi-github"></i></a>
-                <a href="https://alkanzilgir.github.io/cloud-vault-/" target="_blank" rel="noopener" class="proj-ov-btn" aria-label="Live demo"><i class="bi bi-box-arrow-up-right"></i></a>
-              </div>
-              <span class="proj-badge">PWA</span>
-            </div>
-            <div class="proj-body">
-              <h3 class="proj-title">Cloud Vault</h3>
-              <p class="proj-desc">Personal cloud storage PWA backed by Cloudinary. Upload photos, videos and documents from anywhere. Works offline via service workers and installs on mobile.</p>
-              <div class="proj-tags"><span class="ptag">JavaScript</span><span class="ptag">Cloudinary</span><span class="ptag">PWA</span></div>
-            </div>
-          </article>
-        </div>
-
-
-
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section id="gallery" class="sec sec-white">
-    <div class="container">
-      <div class="sec-head text-center reveal">
-        <span class="sec-tag">Gallery</span>
-        <h2 class="sec-title">Photo Gallery</h2>
-        <p class="sec-sub">Projects, studies and Erasmus experience</p>
-      </div>
-      <div class="gallery-grid reveal">
-        <figure class="gal-item">
-          <img src="images/athleteos.png" alt="AthleteOS fitness app" class="gal-img">
-          <figcaption class="gal-cap">AthleteOS — Fitness App</figcaption>
-        </figure>
-        <figure class="gal-item">
-          <img src="images/boardroyal.png" alt="Board Royal multiplayer games" class="gal-img">
-          <figcaption class="gal-cap">Board Royal — Game Selection</figcaption>
-        </figure>
-        <figure class="gal-item">
-          <img src="images/animegeeksite.png" alt="AnimeEngeek E-Commerce project" class="gal-img">
-          <figcaption class="gal-cap">AnimeEngeek — E-Commerce</figcaption>
-        </figure>
-        <figure class="gal-item">
-          <img src="images/siauliai_kolegija.jpg" alt="Siauliai State College Lithuania — Erasmus" class="gal-img">
-          <figcaption class="gal-cap">Erasmus — Šiaulių kolegija, Lithuania</figcaption>
-        </figure>
-        <figure class="gal-item">
-          <img src="images/collage_AAB.jpg" alt="AAB College Kosovo" class="gal-img">
-          <figcaption class="gal-cap">AAB College, Kosovo</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- INTERESTS -->
-  <section id="interests" class="sec sec-white">
-    <div class="container">
-      <div class="sec-head text-center reveal">
-        <span class="sec-tag">More About Me</span>
-        <h2 class="sec-title">Goals &amp; Interests</h2>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-6 reveal">
-          <div class="list-card h-100">
-            <div class="list-card-hd">
-              <div class="list-icon-box"><i class="bi bi-trophy-fill"></i></div>
-              <h3 class="list-card-title">Professional Goals</h3>
-            </div>
-            <ol class="goals-ol">
-              <li>Graduate with distinction from AAB College</li>
-              <li>Land a junior full stack developer role</li>
-              <li>Master full-stack frameworks (Spring Boot, React)</li>
-              <li>Contribute actively to open-source projects on GitHub</li>
-              <li>Earn cloud certifications (AWS / Azure)</li>
-              <li>Build a SaaS product that solves a real-world problem</li>
-            </ol>
+        <div class="skill-col">
+          <div class="skill-col-head">
+            <h3 class="skill-col-title">Frontend</h3>
+            <span class="skill-col-count mono">05</span>
           </div>
+          <div class="skill-row"><span class="skill-name is-adv">HTML &amp; CSS</span><span class="skill-level mono">advanced</span></div>
+          <div class="skill-row"><span class="skill-name is-adv">JavaScript</span><span class="skill-level mono">advanced</span></div>
+          <div class="skill-row"><span class="skill-name">React</span><span class="skill-level mono">intermediate</span></div>
+          <div class="skill-row"><span class="skill-name">Vue</span><span class="skill-level mono">intermediate</span></div>
+          <div class="skill-row"><span class="skill-name is-adv">Bootstrap&nbsp;5</span><span class="skill-level mono">advanced</span></div>
         </div>
-        <div class="col-md-6 reveal">
-          <div class="list-card h-100">
-            <div class="list-card-hd">
-              <div class="list-icon-box"><i class="bi bi-stars"></i></div>
-              <h3 class="list-card-title">Hobbies &amp; Interests</h3>
-            </div>
-            <ul class="hobbies-ul">
-              <li><i class="bi bi-code-square"></i>Building side projects and experimenting with code</li>
-              <li><i class="bi bi-controller"></i>Gaming &amp; game design</li>
-              <li><i class="bi bi-camera"></i>Photography &amp; travel documentation</li>
-              <li><i class="bi bi-music-note"></i>Music while coding</li>
-              <li><i class="bi bi-bicycle"></i>Hiking and outdoor activities</li>
-              <li><i class="bi bi-translate"></i>Learning new languages</li>
-            </ul>
+
+        <div class="skill-col">
+          <div class="skill-col-head">
+            <h3 class="skill-col-title">Backend</h3>
+            <span class="skill-col-count mono">05</span>
           </div>
+          <div class="skill-row"><span class="skill-name is-adv">PHP / Laravel</span><span class="skill-level mono">advanced</span></div>
+          <div class="skill-row"><span class="skill-name">Java</span><span class="skill-level mono">intermediate</span></div>
+          <div class="skill-row"><span class="skill-name">Python</span><span class="skill-level mono">intermediate</span></div>
+          <div class="skill-row"><span class="skill-name">C# / C++</span><span class="skill-level mono">intermediate</span></div>
+          <div class="skill-row"><span class="skill-name">REST APIs</span><span class="skill-level mono">intermediate</span></div>
         </div>
+
+        <div class="skill-col">
+          <div class="skill-col-head">
+            <h3 class="skill-col-title">Data &amp; Cloud</h3>
+            <span class="skill-col-count mono">04</span>
+          </div>
+          <div class="skill-row"><span class="skill-name is-adv">SQL / MySQL</span><span class="skill-level mono">advanced</span></div>
+          <div class="skill-row"><span class="skill-name">Supabase</span><span class="skill-level mono">intermediate</span></div>
+          <div class="skill-row"><span class="skill-name">Firebase</span><span class="skill-level mono">intermediate</span></div>
+          <div class="skill-row"><span class="skill-name">Cloudinary</span><span class="skill-level mono">intermediate</span></div>
+        </div>
+
+        <div class="skill-col">
+          <div class="skill-col-head">
+            <h3 class="skill-col-title">Tools</h3>
+            <span class="skill-col-count mono">05</span>
+          </div>
+          <div class="skill-row"><span class="skill-name is-adv">Git / GitHub</span><span class="skill-level mono">advanced</span></div>
+          <div class="skill-row"><span class="skill-name">Linux</span><span class="skill-level mono">intermediate</span></div>
+          <div class="skill-row"><span class="skill-name">PWA &amp; SW</span><span class="skill-level mono">intermediate</span></div>
+          <div class="skill-row"><span class="skill-name">GitHub Actions</span><span class="skill-level mono">intermediate</span></div>
+          <div class="skill-row"><span class="skill-name">Stripe</span><span class="skill-level mono">intermediate</span></div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- TIMELINE -->
-  <section id="timeline" class="sec sec-blue">
-    <div class="container">
-      <div class="sec-head text-center reveal">
-        <span class="sec-tag sec-tag-light">Credentials</span>
-        <h2 class="sec-title text-white">Education &amp; Certifications</h2>
-      </div>
-      <div class="tl-wrap">
+  <section id="timeline" class="section">
+    <div class="wrap">
+      <header class="section-head">
+        <div class="section-num mono">
+          <span>SECTION</span>
+          <strong>04</strong>
+        </div>
+        <div>
+          <h2 class="section-title" data-reveal>The <em>path</em> so far.</h2>
+          <p class="section-lede" data-reveal>
+            Education, certifications, and the moments that taught me the most.
+          </p>
+        </div>
+      </header>
 
-        <div class="tl-item reveal">
-          <div class="tl-dot"><i class="bi bi-mortarboard-fill"></i></div>
-          <div class="tl-card">
-            <span class="tl-date">2023 – Present</span>
+      <div class="timeline">
+
+        <article class="tl-row" data-reveal data-cursor="link">
+          <div class="tl-marker">
+            <div class="tl-date mono"><span class="accent">2023</span> &mdash; Present</div>
+            <div class="tl-kind mono">Degree <span class="arrow">→</span></div>
+          </div>
+          <div class="tl-body">
             <h3 class="tl-title">BSc Software Engineering</h3>
-            <p class="tl-org"><i class="bi bi-building me-1"></i>AAB College, Kosovo</p>
-            <p class="tl-desc">Algorithms, data structures, OOP, databases, web development, and software engineering principles.</p>
+            <p class="tl-org">AAB College, Prishtina, Kosovo</p>
+            <p class="tl-desc">Algorithms, data structures, OOP, databases, web development, software engineering principles.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="tl-item reveal">
-          <div class="tl-dot"><i class="bi bi-globe-europe-africa"></i></div>
-          <div class="tl-card">
-            <span class="tl-date">Feb 2026 – Present</span>
-            <h3 class="tl-title">Exchange Semester — Computer Science</h3>
-            <p class="tl-org"><i class="bi bi-building me-1"></i>Šiaulių kolegija, Lithuania</p>
-            <p class="tl-desc">Erasmus international exchange. Studying alongside students from across Europe, broadening perspective on software practices and collaborative development.</p>
+        <article class="tl-row" data-reveal data-cursor="link">
+          <div class="tl-marker">
+            <div class="tl-date mono"><span class="accent">2026</span> · Feb &mdash; Present</div>
+            <div class="tl-kind mono">Semester <span class="arrow">→</span></div>
           </div>
-        </div>
-
-        <div class="tl-item reveal">
-          <div class="tl-dot"><i class="bi bi-cup-hot-fill"></i></div>
-          <div class="tl-card">
-            <span class="tl-date">2020 – 2021</span>
-            <h3 class="tl-title">Java Programming</h3>
-            <p class="tl-org"><i class="bi bi-globe me-1"></i>Cacttus Education, Prishtina</p>
-            <p class="tl-desc">Core Java OOP, collections, exception handling, I/O and basic design patterns.</p>
+          <div class="tl-body">
+            <h3 class="tl-title">Computer Science</h3>
+            <p class="tl-org">Šiaulių kolegija, Lithuania</p>
+            <p class="tl-desc">A semester abroad alongside students from across Europe. New climate, same compiler.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="tl-item reveal">
-          <div class="tl-dot"><i class="bi bi-patch-check-fill"></i></div>
-          <div class="tl-card">
-            <span class="tl-date">2021 – 2022</span>
+        <article class="tl-row" data-reveal data-cursor="link">
+          <div class="tl-marker">
+            <div class="tl-date mono"><span class="accent">2022</span> &mdash; 2023</div>
+            <div class="tl-kind mono">Certificate <span class="arrow">→</span></div>
+          </div>
+          <div class="tl-body">
+            <h3 class="tl-title">SQL &amp; Database Design</h3>
+            <p class="tl-org">Online certification</p>
+            <p class="tl-desc">Relational design, advanced SQL, normalisation, MySQL.</p>
+          </div>
+        </article>
+
+        <article class="tl-row" data-reveal data-cursor="link">
+          <div class="tl-marker">
+            <div class="tl-date mono"><span class="accent">2021</span> &mdash; 2022</div>
+            <div class="tl-kind mono">Certificate <span class="arrow">→</span></div>
+          </div>
+          <div class="tl-body">
             <h3 class="tl-title">Web Development Fundamentals</h3>
-            <p class="tl-org"><i class="bi bi-globe me-1"></i>Udemy Online Certification</p>
+            <p class="tl-org">Udemy</p>
             <p class="tl-desc">In-depth course covering C# and web development fundamentals.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="tl-item reveal">
-          <div class="tl-dot"><i class="bi bi-database-fill-check"></i></div>
-          <div class="tl-card">
-            <span class="tl-date">2022 – 2023</span>
-            <h3 class="tl-title">SQL &amp; Database Design</h3>
-            <p class="tl-org"><i class="bi bi-globe me-1"></i>Online Certification</p>
-            <p class="tl-desc">Relational database design, advanced SQL queries, normalisation and MySQL.</p>
+        <article class="tl-row" data-reveal data-cursor="link">
+          <div class="tl-marker">
+            <div class="tl-date mono"><span class="accent">2020</span> &mdash; 2021</div>
+            <div class="tl-kind mono">Course <span class="arrow">→</span></div>
           </div>
-        </div>
+          <div class="tl-body">
+            <h3 class="tl-title">Java Programming</h3>
+            <p class="tl-org">Cacttus Education, Prishtina</p>
+            <p class="tl-desc">Core Java OOP, collections, exception handling, I/O and basic design patterns.</p>
+          </div>
+        </article>
 
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="sec sec-white">
-    <div class="container">
-      <div class="sec-head text-center reveal">
-        <span class="sec-tag">Let's Talk</span>
-        <h2 class="sec-title">Contact Me</h2>
-        <p class="sec-sub">Have a project in mind or want to connect? Reach out!</p>
-      </div>
-      <div class="row g-5 align-items-start">
+  <section id="contact" class="section">
+    <div class="wrap">
+      <header class="section-head">
+        <div class="section-num mono">
+          <span>SECTION</span>
+          <strong>05</strong>
+        </div>
+        <div>
+          <h2 class="section-title" data-reveal>Let's <em>talk</em>.</h2>
+        </div>
+      </header>
 
-        <div class="col-lg-4 reveal">
-          <div class="contact-panel">
-            <h3 class="cp-title"><i class="bi bi-chat-dots-fill me-2"></i>Get In Touch</h3>
-            <div class="cp-item">
-              <span class="cp-ico"><i class="bi bi-envelope-fill"></i></span>
-              <div><span class="cp-lbl">Email</span><a href="mailto:alkanzilgir@gmail.com" class="cp-val cp-email-link">alkanzilgir@gmail.com</a></div>
+      <div class="contact-grid">
+        <div>
+          <p class="contact-lead" data-reveal>
+            Have a project in mind, or just want to swap notes on something you're building? <span class="accent">Write me.</span>
+          </p>
+
+          <div class="contact-info">
+            <div class="contact-row">
+              <span class="contact-lbl mono">EMAIL</span>
+              <span class="contact-val">
+                <a href="mailto:alkanzilgir@gmail.com" data-cursor="link">alkanzilgir@gmail.com<span aria-hidden="true">↗</span></a>
+              </span>
             </div>
-            <div class="cp-item">
-              <span class="cp-ico"><i class="bi bi-geo-alt-fill"></i></span>
-              <div><span class="cp-lbl">Location</span><span class="cp-val">Prishtina, Kosovo</span></div>
+            <div class="contact-row">
+              <span class="contact-lbl mono">LOCATION</span>
+              <span class="contact-val">Prishtina, Kosovo · Šiauliai, Lithuania</span>
             </div>
-            <div class="cp-item">
-              <span class="cp-ico"><i class="bi bi-mortarboard-fill"></i></span>
-              <div><span class="cp-lbl">Institution</span><span class="cp-val">AAB College</span></div>
+            <div class="contact-row">
+              <span class="contact-lbl mono">RESPONSE TIME</span>
+              <span class="contact-val">Usually within 24 hours.</span>
             </div>
-            <div class="cp-item">
-              <span class="cp-ico"><i class="bi bi-clock-fill"></i></span>
-              <div><span class="cp-lbl">Response Time</span><span class="cp-val">Within 24 hours</span></div>
-            </div>
-            <div class="cp-socials mt-4">
-              <a href="https://www.linkedin.com/in/alkan-zilgir-86615b37a/" target="_blank" rel="noopener" class="cp-soc" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener" class="cp-soc" aria-label="GitHub"><i class="bi bi-github"></i></a>
-              <a href="https://www.instagram.com/_alkanzilgir/" target="_blank" rel="noopener" class="cp-soc" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/alkan-zilgir-86615b37a/" target="_blank" rel="noopener" class="contact-soc" aria-label="LinkedIn" data-magnetic data-cursor="link"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener" class="contact-soc" aria-label="GitHub" data-magnetic data-cursor="link"><i class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/_alkanzilgir/" target="_blank" rel="noopener" class="contact-soc" aria-label="Instagram" data-magnetic data-cursor="link"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
 
-        <div class="col-lg-8 reveal">
-          <div class="contact-form-wrap">
-            <form id="contact-form" novalidate>
-              <div class="row g-3">
-                <div class="col-sm-6">
-                  <label for="fName" class="form-label fc-lbl">Full Name <span class="req">*</span></label>
-                  <input type="text" id="fName" name="name" class="form-control fc" placeholder="e.g. John Doe"
-                         required minlength="2" maxlength="80"
-                         pattern="[A-Za-z\xC0-\xFF\s\-\x27]+"
-                         title="Letters, spaces and hyphens only.">
-                  <div class="invalid-feedback">Enter a valid name (at least 2 letters).</div>
-                </div>
-                <div class="col-sm-6">
-                  <label for="fEmail" class="form-label fc-lbl">Email Address <span class="req">*</span></label>
-                  <input type="email" id="fEmail" name="email" class="form-control fc" placeholder="you@example.com"
-                         required
-                         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-                         title="Enter a valid email address.">
-                  <div class="invalid-feedback">Enter a valid email address.</div>
-                </div>
-                <div class="col-sm-6">
-                  <label for="fPhone" class="form-label fc-lbl">Phone <small class="text-muted">(optional)</small></label>
-                  <input type="number" id="fPhone" name="phone" class="form-control fc" placeholder="38344123456"
-                         min="10000" max="999999999999999" title="Enter country code + number, digits only.">
-                  <div class="invalid-feedback">Digits only (include country code).</div>
-                </div>
-                <div class="col-sm-6">
-                  <label for="fSubject" class="form-label fc-lbl">Subject <span class="req">*</span></label>
-                  <select id="fSubject" name="subject" class="form-select fc" required>
-                    <option value="" disabled selected>Select a topic…</option>
-                    <option value="job">Job Opportunity</option>
-                    <option value="collab">Collaboration</option>
-                    <option value="project">Project Inquiry</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="other">Other</option>
-                  </select>
-                  <div class="invalid-feedback">Please select a subject.</div>
-                </div>
-                <div class="col-12">
-                  <label for="fMessage" class="form-label fc-lbl">Message <span class="req">*</span></label>
-                  <textarea id="fMessage" name="message" class="form-control fc" rows="5"
-                            placeholder="Write your message here…"
-                            required minlength="20" maxlength="2000"
-                            title="Message must be at least 20 characters."></textarea>
-                  <div class="invalid-feedback">Message must be at least 20 characters long.</div>
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input fc-check" type="checkbox" id="fConsent" name="consent" required>
-                    <label class="form-check-label fc-lbl" for="fConsent">
-                      I agree that Alkan may use my contact details to reply to this message. <span class="req">*</span>
-                    </label>
-                    <div class="invalid-feedback">You must agree to proceed.</div>
-                  </div>
-                </div>
-                <div class="col-12 d-flex justify-content-end">
-                  <button type="submit" class="btn-solid btn-send">
-                    <i class="bi bi-send-fill me-2"></i>Send Message
-                  </button>
-                </div>
-              </div>
-            </form>
+        <form class="form" id="contact-form" novalidate data-reveal>
+          <div class="form-row">
+            <div class="field">
+              <label for="fName">Your name <span class="req">*</span></label>
+              <input type="text" id="fName" name="name" required minlength="2" maxlength="80" placeholder="Ada Lovelace">
+              <span class="err mono">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="fEmail">Email <span class="req">*</span></label>
+              <input type="email" id="fEmail" name="email" required placeholder="you@example.com">
+              <span class="err mono">Please enter a valid email.</span>
+            </div>
           </div>
-        </div>
 
+          <div class="form-row">
+            <div class="field">
+              <label for="fPhone">Phone <span style="opacity:.6">(optional)</span></label>
+              <input type="tel" id="fPhone" name="phone" placeholder="+383 …">
+            </div>
+            <div class="field">
+              <label for="fSubject">Topic <span class="req">*</span></label>
+              <select id="fSubject" name="subject" required>
+                <option value="" disabled selected>Choose one…</option>
+                <option value="job">Job opportunity</option>
+                <option value="collab">Collaboration</option>
+                <option value="project">Project inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="err mono">Please pick a topic.</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="fMessage">Message <span class="req">*</span></label>
+            <textarea id="fMessage" name="message" rows="5" required minlength="20" maxlength="2000" placeholder="Tell me a little about what you're working on…"></textarea>
+            <span class="err mono">A few more words, please (20 minimum).</span>
+          </div>
+
+          <label class="checkbox" for="fConsent">
+            <input type="checkbox" id="fConsent" name="consent" required>
+            <span class="checkbox-label">
+              I agree that Alkan may use my contact details to reply. <span class="req">*</span>
+            </span>
+          </label>
+
+          <div class="form-actions">
+            <span class="form-note mono">↳ Replies sent from alkanzilgir@gmail.com</span>
+            <button type="submit" class="btn-send" data-magnetic data-cursor="link">
+              <span class="btn-send-label">Send message</span>
+              <span class="arrow" aria-hidden="true">→</span>
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer id="site-footer">
-    <div class="footer-wave" aria-hidden="true">
-      <svg viewBox="0 0 1440 70" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-        <path d="M0,35 C240,70 480,0 720,35 C960,70 1200,0 1440,35 L1440,70 L0,70 Z" fill="#05234a"/>
-      </svg>
-    </div>
-    <div class="footer-body">
-      <div class="container">
-        <div class="row align-items-start gy-4">
-          <div class="col-md-4">
-            <span class="ft-brand">Alkan<span class="ft-acc"> Zilgir</span></span>
-            <p class="ft-tag mt-2">Full Stack Developer<br>AAB College &middot; Kosovo</p>
-          </div>
-          <div class="col-md-4 text-md-center">
-            <h3 class="ft-nav-title">Quick Links</h3>
-            <ul class="ft-nav">
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              
-              <li><a href="#interests">Interests</a></li>
-              <li><a href="#timeline">Timeline</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4 text-md-end">
-            <h3 class="ft-nav-title">Connect</h3>
-            <div class="ft-socials">
-              <a href="https://www.linkedin.com/in/alkan-zilgir-86615b37a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
-              <a href="https://www.instagram.com/_alkanzilgir/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            </div>
-          </div>
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Alkan <em>Zilgir.</em></div>
+          <p class="footer-strap mono">Full-stack developer · Prishtina ↔ Šiauliai · 2026</p>
         </div>
-        <hr class="ft-hr">
-        <p class="ft-bottom text-center mb-0">
-          &copy; <span id="year">2025</span> Alkan Zilgir &mdash; All rights reserved.
-          Built with <span class="ft-acc">Bootstrap 5</span> &amp; pure HTML5/CSS3.
-        </p>
+
+        <div>
+          <h4 class="footer-h mono">PAGES</h4>
+          <ul class="footer-list">
+            <li><a href="#work" data-cursor="link">Work <span class="arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="#about" data-cursor="link">About <span class="arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="#skills" data-cursor="link">Stack <span class="arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="#timeline" data-cursor="link">Path <span class="arrow" aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-h mono">ELSEWHERE</h4>
+          <ul class="footer-list">
+            <li><a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener" data-cursor="link">GitHub <span class="arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="https://www.linkedin.com/in/alkan-zilgir-86615b37a/" target="_blank" rel="noopener" data-cursor="link">LinkedIn <span class="arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="https://www.instagram.com/_alkanzilgir/" target="_blank" rel="noopener" data-cursor="link">Instagram <span class="arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="mailto:alkanzilgir@gmail.com" data-cursor="link">Email <span class="arrow" aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-base">
+        <span>© <span id="year">2026</span> Alkan Zilgir · All rights reserved.</span>
+        <span>Designed &amp; built by hand in <span style="color:var(--accent)">HTML</span>, <span style="color:var(--accent)">CSS</span>, <span style="color:var(--accent)">JS</span>.</span>
       </div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmXKJeKrPvA4F0L9LB9uBQ5YoCMBrT"
-          crossorigin="anonymous"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top" data-cursor="link" data-magnetic>
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </a>
 
-    (function () {
-      'use strict';
-      var form = document.getElementById('contact-form');
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        if (!this.checkValidity()) {
-          this.classList.add('was-validated');
-          return;
-        }
-        this.classList.add('was-validated');
-        var btn = this.querySelector('.btn-send');
-        btn.innerHTML = '<i class="bi bi-hourglass-split me-2"></i>Sending...';
-        btn.disabled = true;
-        fetch('https://formspree.io/f/xaqkvjpo', {
-          method: 'POST',
-          body: new FormData(this),
-          headers: { 'Accept': 'application/json' }
-        }).then(function(res) {
-          if (res.ok) {
-            btn.innerHTML = '<i class="bi bi-check-circle-fill me-2"></i>Message Sent!';
-            btn.style.background = '#22c55e';
-            form.reset();
-            form.classList.remove('was-validated');
-          } else {
-            btn.innerHTML = '<i class="bi bi-x-circle me-2"></i>Failed — try again';
-            btn.disabled = false;
-          }
-        }).catch(function() {
-          btn.innerHTML = '<i class="bi bi-x-circle me-2"></i>Failed — try again';
-          btn.disabled = false;
-        });
-      }, false);
-    })();
-
-    window.addEventListener('scroll', function () {
-      document.getElementById('backToTop').classList.toggle('btt-show', window.scrollY > 450);
-    });
-
-    var revealEls = document.querySelectorAll('.reveal');
-    var revealObs = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add('revealed'); revealObs.unobserve(e.target); }
-      });
-    }, { threshold: 0.12 });
-    revealEls.forEach(function (el) { revealObs.observe(el); });
-  </script>
-
+  <script src="script.js" defer></script>
 </body>
 </html>

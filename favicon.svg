@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#1a1816"/>
+  <g fill="#f5f1ea" font-family="'Fraunces', 'Times New Roman', serif" font-weight="600">
+    <text x="14" y="40" font-size="34" letter-spacing="-1">A</text>
+    <text x="36" y="56" font-size="22" font-style="italic" fill="#de4a32">z</text>
+  </g>
+</svg>

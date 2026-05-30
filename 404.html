@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f7f5f1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>404 — Alkan Zilgir</title>
+  <style>
+    body.notfound {
+      min-height: 100svh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+    .nf-wrap {
+      display: grid;
+      align-content: center;
+      gap: var(--s-8);
+      padding: var(--s-16) 0;
+    }
+    .nf-meta {
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+      gap: var(--s-3);
+      padding-bottom: var(--s-4);
+      border-bottom: 1px solid var(--rule);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--ink-mute);
+    }
+    .nf-meta strong { color: var(--ink); font-weight: 500; }
+    .nf-meta .accent { color: var(--accent); }
+
+    .nf-code {
+      font-family: var(--font-display);
+      font-size: clamp(6rem, 22vw, 14rem);
+      font-weight: 500;
+      letter-spacing: -0.04em;
+      line-height: 0.9;
+      color: var(--ink);
+    }
+    .nf-code em { font-style: italic; color: var(--accent); font-weight: 400; }
+    .nf-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--ink-soft);
+      max-width: 28ch;
+      line-height: 1.25;
+    }
+    .nf-body {
+      font-size: var(--t-lg);
+      color: var(--ink-soft);
+      max-width: 52ch;
+      line-height: 1.6;
+    }
+    .nf-actions { display: flex; flex-wrap: wrap; gap: var(--s-3); }
+
+    .nf-foot {
+      padding: var(--s-6) 0;
+      border-top: 1px solid var(--rule);
+      font-family: var(--font-mono); font-size: 0.72rem;
+      color: var(--ink-mute);
+      display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--s-3);
+    }
+    .nf-foot a { color: var(--ink); }
+  </style>
+</head>
+<body class="notfound">
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="/" class="nav-brand">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Alkan Zilgir</span>
+        <span class="brand-sub mono">/ 2026</span>
+      </a>
+      <a href="/" class="nav-cta">
+        Home
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap nf-wrap">
+    <div class="nf-meta">
+      <span><strong>ERROR</strong> &mdash; the page you wanted isn't here.</span>
+      <span><span class="accent">404</span> &nbsp;·&nbsp; <strong>not found</strong></span>
+    </div>
+
+    <h1 class="nf-code">4<em>0</em>4.</h1>
+
+    <p class="nf-title">
+      Either the URL was mistyped, or this page never existed in the first place.
+    </p>
+
+    <p class="nf-body">
+      Either way, nothing here. The work, the writing and the way out are all back home.
+    </p>
+
+    <div class="nf-actions">
+      <a href="/" class="btn btn-primary">
+        Back to the homepage <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a href="/#work" class="btn btn-ghost">
+        Jump to the work
+      </a>
+    </div>
+  </main>
+
+  <footer class="nf-foot wrap">
+    <span>© <span id="year">2026</span> Alkan Zilgir</span>
+    <span>
+      <a href="mailto:alkanzilgir@gmail.com">alkanzilgir@gmail.com</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener">GitHub ↗</a>
+    </span>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
