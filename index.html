@@ -188,7 +188,6 @@
             <div class="work-more-body">
               <p><strong class="work-more-lbl">The problem.</strong> I was bouncing between four apps for workouts, food, sleep and weight tracking. I wanted one place that worked offline on my phone and didn't sell my data.</p>
               <p><strong class="work-more-lbl">What I built.</strong> Supabase backend with row-level security on every table, Stripe for the premium tier, Google OAuth, a service worker for offline mode, AI-assisted coaching that adapts plans week to week, and push notifications.</p>
-              <p><strong class="work-more-lbl">What I'd change.</strong> Move parts of the AI layer server-side to shrink the client bundle, and write proper integration tests around the Stripe webhooks.</p>
             </div>
           </details>
           <div class="work-tags">
@@ -221,7 +220,6 @@
             <div class="work-more-body">
               <p><strong class="work-more-lbl">The problem.</strong> I wanted to learn Laravel properly by building something I'd actually open every week, not a tutorial todo list. Personal finance was the excuse.</p>
               <p><strong class="work-more-lbl">What I built.</strong> Eloquent models with real migrations and constraints, budget rollups and chart breakdowns, a full PHPUnit test suite and a GitHub Actions pipeline that runs the tests on every push.</p>
-              <p><strong class="work-more-lbl">What I'd change.</strong> Move budget calculation into a service layer instead of fat controllers, and rewrite the UI on top of Inertia + Vue for smoother updates.</p>
             </div>
           </details>
           <div class="work-tags">
@@ -249,6 +247,13 @@
           <p class="work-desc">
             Five board games in one PWA, with a full chess engine (castling, en passant, pawn promotion). Firebase Realtime Database carries the online play and auth.
           </p>
+          <details class="work-more">
+            <summary><span>Read more</span><span class="work-more-icon" aria-hidden="true">+</span></summary>
+            <div class="work-more-body">
+              <p><strong class="work-more-lbl">The problem.</strong> I wanted to write a real chess engine instead of importing one. Once that was working, wrapping a few more board games around it and adding online multiplayer turned it into a proper project.</p>
+              <p><strong class="work-more-lbl">What I built.</strong> Five games — chess, checkers, tic-tac-toe and two more — with the chess engine handling castling, en passant, pawn promotion and check detection from scratch. Firebase Realtime Database for live multiplayer matches, Firebase auth for accounts, and a service worker so it installs on mobile.</p>
+            </div>
+          </details>
           <div class="work-tags">
             <span class="work-tag">JavaScript</span>
             <span class="work-tag">Firebase</span>
@@ -273,6 +278,13 @@
           <p class="work-desc">
             A personal cloud storage PWA backed by Cloudinary. Upload photos, videos and documents from anywhere, works offline, installs on mobile.
           </p>
+          <details class="work-more">
+            <summary><span>Read more</span><span class="work-more-icon" aria-hidden="true">+</span></summary>
+            <div class="work-more-body">
+              <p><strong class="work-more-lbl">The problem.</strong> Bouncing between Google Photos, OneDrive and an external drive for personal files was annoying. I wanted one place I controlled, without ads or compression.</p>
+              <p><strong class="work-more-lbl">What I built.</strong> A PWA backed by Cloudinary's API for storage, with drag-and-drop uploads, previews for images, video and PDFs, offline browsing via a service worker, and mobile-installable so it lives on the home screen.</p>
+            </div>
+          </details>
           <div class="work-tags">
             <span class="work-tag">JavaScript</span>
             <span class="work-tag">Cloudinary</span>
@@ -297,6 +309,13 @@
           <p class="work-desc">
             A small e-commerce front for anime accessories: product listings, cart, wishlist, Instagram integration, dark UI with hand-rolled animations.
           </p>
+          <details class="work-more">
+            <summary><span>Read more</span><span class="work-more-icon" aria-hidden="true">+</span></summary>
+            <div class="work-more-body">
+              <p><strong class="work-more-lbl">The problem.</strong> Coursework asked for an e-commerce build. I wanted to actually learn storefront patterns — cart state, wishlist, listings — on something I'd look at twice instead of a generic shop template.</p>
+              <p><strong class="work-more-lbl">What I built.</strong> A storefront for anime accessories: product grid, cart and wishlist in localStorage, Instagram feed integration for marketing, dark UI with scroll-based animations I wrote by hand instead of pulling in a library.</p>
+            </div>
+          </details>
           <div class="work-tags">
             <span class="work-tag">HTML / CSS</span>
             <span class="work-tag">JavaScript</span>
@@ -320,6 +339,13 @@
           <p class="work-desc">
             A full-stack auth system with admin and user roles, bcrypt hashing and MySQL. Built using PHP OOP fundamentals: abstract classes, interfaces, traits, namespaces.
           </p>
+          <details class="work-more">
+            <summary><span>Read more</span><span class="work-more-icon" aria-hidden="true">+</span></summary>
+            <div class="work-more-body">
+              <p><strong class="work-more-lbl">The problem.</strong> I wanted to learn PHP properly — not the script-soup version, the OOP version with abstract classes, interfaces, traits and namespaces. So I built an auth system from scratch instead of installing one.</p>
+              <p><strong class="work-more-lbl">What I built.</strong> Full registration and login with bcrypt password hashing, MySQL via PDO with prepared statements, role-based access control for admin and user roles, and a clean OOP structure: abstract base classes for users, interfaces for role behavior, traits for shared functionality.</p>
+            </div>
+          </details>
           <div class="work-tags">
             <span class="work-tag">PHP OOP</span>
             <span class="work-tag">MySQL</span>
