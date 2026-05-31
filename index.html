@@ -11,6 +11,7 @@
   <meta property="og:title" content="Alkan Zilgir, Full-Stack Developer">
   <meta property="og:description" content="Portfolio of real projects in JS, Laravel, Java, Python and more.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alkanzilgir.github.io/">
   <meta property="og:image" content="images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -19,13 +20,46 @@
   <meta name="twitter:title" content="Alkan Zilgir, Full-Stack Developer">
   <meta name="twitter:description" content="Portfolio of real projects in JS, Laravel, Java, Python and more.">
   <meta name="twitter:image" content="images/og-image.png">
+  <link rel="canonical" href="https://alkanzilgir.github.io/">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="alternate icon" type="image/png" href="favicon.svg">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Alkan Zilgir">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2026053109">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alkan Zilgir",
+    "jobTitle": "Full-Stack Developer",
+    "description": "Full-stack developer and third-year software engineering student.",
+    "email": "mailto:alkanzilgir@gmail.com",
+    "url": "https://alkanzilgir.github.io/",
+    "image": "https://alkanzilgir.github.io/images/me.jpeg",
+    "sameAs": [
+      "https://github.com/AlkanZilgir/",
+      "https://www.linkedin.com/in/alkan-zilgir-86615b37a/",
+      "https://www.instagram.com/_alkanzilgir/"
+    ],
+    "knowsLanguage": ["sq", "tr", "en"],
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "AAB College", "address": "Prishtina, Kosovo" },
+      { "@type": "CollegeOrUniversity", "name": "Šiaulių kolegija", "address": "Šiauliai, Lithuania" }
+    ],
+    "knowsAbout": ["JavaScript", "PHP", "Laravel", "React", "Vue", "Java", "Python", "SQL", "Supabase", "Firebase", "Stripe"]
+  }
+  </script>
   <title>Alkan Zilgir, Full-Stack Developer</title>
 </head>
 <body>
+
+  <a class="skip-link" href="#top">Skip to content</a>
 
   <!-- NAV -->
   <header class="nav" id="nav">
@@ -41,6 +75,7 @@
           <li><a class="nav-link" href="#about"    data-cursor="link"><span class="num mono">02</span><span>About</span></a></li>
           <li><a class="nav-link" href="#skills"   data-cursor="link"><span class="num mono">03</span><span>Stack</span></a></li>
           <li><a class="nav-link" href="#timeline" data-cursor="link"><span class="num mono">04</span><span>Path</span></a></li>
+          <li><a class="nav-link" href="#contact" data-cursor="link"><span class="num mono">05</span><span>Contact</span></a></li>
         </ul>
       </nav>
       <a href="#contact" class="nav-cta" data-magnetic data-cursor="link">
@@ -63,20 +98,19 @@
         </div>
         <div class="hero-issue">
           <span><strong>Prishtina</strong> &mdash; <strong>Šiauliai</strong></span>
-          <span>53.92° N &nbsp; · &nbsp; 23.31° E</span>
         </div>
       </header>
 
       <div>
         <h1 class="hero-title" data-split>
           Alkan Zilgir,<br>
-          <em>building things</em><br>
-          on both sides.
+          building <em>full-stack</em><br>
+          web apps.
         </h1>
 
         <div class="hero-body">
           <p class="hero-tagline">
-            Software engineering student, full-stack by habit. Writing real code instead of reading about it.
+            Full-stack developer and third-year software engineering student.
           </p>
           <div class="hero-actions">
             <a href="#work" class="btn btn-primary" data-magnetic data-cursor="link">
@@ -92,9 +126,11 @@
       <footer class="hero-meta">
         <div class="hero-meta-row">
           <span class="ind" aria-hidden="true"></span>
-          <span>Available <strong>summer 2026</strong></span>
+          <span><strong>Available</strong> for opportunities</span>
         </div>
         <div class="hero-meta-row" style="margin-left:auto">
+          <a href="mailto:alkanzilgir@gmail.com" data-cursor="link" style="color:var(--ink)">Email ↗</a>
+          <span style="color:var(--rule-strong)">·</span>
           <a href="https://github.com/AlkanZilgir/" target="_blank" rel="noopener" data-cursor="link" style="color:var(--ink)">GitHub ↗</a>
           <span style="color:var(--rule-strong)">·</span>
           <a href="https://www.linkedin.com/in/alkan-zilgir-86615b37a/" target="_blank" rel="noopener" data-cursor="link" style="color:var(--ink)">LinkedIn ↗</a>
@@ -140,13 +176,21 @@
             </div>
           </div>
           <div class="work-meta">
-            <span class="work-num mono"><strong>01</strong> · 2025</span>
+            <span class="work-num mono"><strong>01</strong> · Winter 2025/26 · ~3 mo</span>
             <span class="mono">Fitness PWA · Supabase · Stripe</span>
           </div>
           <h3 class="work-title">AthleteOS, an <em>everyday training</em> companion.</h3>
           <p class="work-desc">
             A full-featured fitness PWA covering workouts, nutrition, sleep and body composition. Supabase backend, AI-assisted coaching, Stripe payments, Google OAuth, offline support and push notifications.
           </p>
+          <details class="work-more">
+            <summary><span>Read more</span><span class="work-more-icon" aria-hidden="true">+</span></summary>
+            <div class="work-more-body">
+              <p><strong class="work-more-lbl">The problem.</strong> I was bouncing between four apps for workouts, food, sleep and weight tracking. I wanted one place that worked offline on my phone and didn't sell my data.</p>
+              <p><strong class="work-more-lbl">What I built.</strong> Supabase backend with row-level security on every table, Stripe for the premium tier, Google OAuth, a service worker for offline mode, AI-assisted coaching that adapts plans week to week, and push notifications.</p>
+              <p><strong class="work-more-lbl">What I'd change.</strong> Move parts of the AI layer server-side to shrink the client bundle, and write proper integration tests around the Stripe webhooks.</p>
+            </div>
+          </details>
           <div class="work-tags">
             <span class="work-tag">JavaScript</span>
             <span class="work-tag">Supabase</span>
@@ -165,13 +209,21 @@
             </div>
           </div>
           <div class="work-meta">
-            <span class="work-num mono"><strong>02</strong> · 2025</span>
+            <span class="work-num mono"><strong>02</strong> · Fall 2025 · ~6 wks</span>
             <span class="mono">Web App · MySQL · CI/CD</span>
           </div>
           <h3 class="work-title">Finance Tracker.</h3>
           <p class="work-desc">
             A full-stack expense and budgeting app in Laravel. Migrations, unit tests, Tailwind UI, data viz and a GitHub Actions CI pipeline that actually runs on every push.
           </p>
+          <details class="work-more">
+            <summary><span>Read more</span><span class="work-more-icon" aria-hidden="true">+</span></summary>
+            <div class="work-more-body">
+              <p><strong class="work-more-lbl">The problem.</strong> I wanted to learn Laravel properly by building something I'd actually open every week, not a tutorial todo list. Personal finance was the excuse.</p>
+              <p><strong class="work-more-lbl">What I built.</strong> Eloquent models with real migrations and constraints, budget rollups and chart breakdowns, a full PHPUnit test suite and a GitHub Actions pipeline that runs the tests on every push.</p>
+              <p><strong class="work-more-lbl">What I'd change.</strong> Move budget calculation into a service layer instead of fat controllers, and rewrite the UI on top of Inertia + Vue for smoother updates.</p>
+            </div>
+          </details>
           <div class="work-tags">
             <span class="work-tag">Laravel</span>
             <span class="work-tag">PHP</span>
@@ -190,7 +242,7 @@
             </div>
           </div>
           <div class="work-meta">
-            <span class="work-num mono"><strong>03</strong> · 2024</span>
+            <span class="work-num mono"><strong>03</strong> · Spring 2025 · ~2 mo</span>
             <span class="mono">Games · Firebase</span>
           </div>
           <h3 class="work-title">Board Royal.</h3>
@@ -214,7 +266,7 @@
             </div>
           </div>
           <div class="work-meta">
-            <span class="work-num mono"><strong>04</strong> · 2024</span>
+            <span class="work-num mono"><strong>04</strong> · Fall 2024 · ~4 wks</span>
             <span class="mono">Storage · Cloudinary</span>
           </div>
           <h3 class="work-title">Cloud Vault.</h3>
@@ -238,7 +290,7 @@
             </div>
           </div>
           <div class="work-meta">
-            <span class="work-num mono"><strong>05</strong> · 2023</span>
+            <span class="work-num mono"><strong>05</strong> · Spring 2024 · ~3 wks</span>
             <span class="mono">Shop · Bootstrap</span>
           </div>
           <h3 class="work-title">AnimeGeek.</h3>
@@ -261,7 +313,7 @@
             </div>
           </div>
           <div class="work-meta">
-            <span class="work-num mono"><strong>06</strong> · 2023</span>
+            <span class="work-num mono"><strong>06</strong> · Spring 2023 · ~4 wks</span>
             <span class="mono">Auth · PHP OOP · MySQL</span>
           </div>
           <h3 class="work-title">User Management System.</h3>
@@ -288,7 +340,7 @@
           <strong>02</strong>
         </div>
         <div>
-          <h2 class="section-title" data-reveal>A short <em>introduction</em>.</h2>
+          <h2 class="section-title" data-reveal>About <em>me</em>.</h2>
         </div>
       </header>
 
@@ -303,7 +355,7 @@
 
         <div class="about-text">
           <p class="about-lead" data-reveal>
-            I just really like making things, and the slow, messy fun of turning them into <span class="accent">real projects</span>.
+            I build <span class="accent">full-stack web apps</span>. Usually the kind of thing I'd want to use myself.
           </p>
 
           <div class="about-prose" data-reveal>
@@ -328,8 +380,16 @@
               <dd class="about-fact-val">AAB College, Kosovo</dd>
             </div>
             <div class="about-fact">
-              <dt class="about-fact-lbl mono">ALSO AT</dt>
-              <dd class="about-fact-val">Šiaulių kolegija, Lithuania</dd>
+              <dt class="about-fact-lbl mono">CURRENTLY</dt>
+              <dd class="about-fact-val">Exchange semester, Šiaulių kolegija</dd>
+            </div>
+            <div class="about-fact">
+              <dt class="about-fact-lbl mono">CODING SINCE</dt>
+              <dd class="about-fact-val">2020</dd>
+            </div>
+            <div class="about-fact">
+              <dt class="about-fact-lbl mono">BASED IN</dt>
+              <dd class="about-fact-val">Prishtina, Kosovo</dd>
             </div>
             <div class="about-fact">
               <dt class="about-fact-lbl mono">STATUS</dt>
@@ -379,11 +439,11 @@
             <h3 class="skill-col-title">Frontend</h3>
             <span class="skill-col-count mono">05</span>
           </div>
-          <div class="skill-row"><span class="skill-name is-adv">HTML &amp; CSS</span><span class="skill-level mono">advanced</span></div>
-          <div class="skill-row"><span class="skill-name is-adv">JavaScript</span><span class="skill-level mono">advanced</span></div>
-          <div class="skill-row"><span class="skill-name">React</span><span class="skill-level mono">intermediate</span></div>
-          <div class="skill-row"><span class="skill-name">Vue</span><span class="skill-level mono">intermediate</span></div>
-          <div class="skill-row"><span class="skill-name is-adv">Bootstrap&nbsp;5</span><span class="skill-level mono">advanced</span></div>
+          <div class="skill-row"><span class="skill-name is-adv">HTML &amp; CSS</span><span class="skill-level mono">across all projects</span></div>
+          <div class="skill-row"><span class="skill-name is-adv">JavaScript</span><span class="skill-level mono">AthleteOS, Board Royal, Cloud Vault</span></div>
+          <div class="skill-row"><span class="skill-name">React</span><span class="skill-level mono">components, coursework</span></div>
+          <div class="skill-row"><span class="skill-name">Vue</span><span class="skill-level mono">exploration projects</span></div>
+          <div class="skill-row"><span class="skill-name is-adv">Bootstrap&nbsp;5</span><span class="skill-level mono">AnimeGeek, coursework</span></div>
         </div>
 
         <div class="skill-col">
@@ -391,11 +451,11 @@
             <h3 class="skill-col-title">Backend</h3>
             <span class="skill-col-count mono">05</span>
           </div>
-          <div class="skill-row"><span class="skill-name is-adv">PHP / Laravel</span><span class="skill-level mono">advanced</span></div>
-          <div class="skill-row"><span class="skill-name">Java</span><span class="skill-level mono">intermediate</span></div>
-          <div class="skill-row"><span class="skill-name">Python</span><span class="skill-level mono">intermediate</span></div>
-          <div class="skill-row"><span class="skill-name">C# / C++</span><span class="skill-level mono">intermediate</span></div>
-          <div class="skill-row"><span class="skill-name">REST APIs</span><span class="skill-level mono">intermediate</span></div>
+          <div class="skill-row"><span class="skill-name is-adv">PHP / Laravel</span><span class="skill-level mono">Finance Tracker, User Management</span></div>
+          <div class="skill-row"><span class="skill-name">Java</span><span class="skill-level mono">Cacttus course, coursework</span></div>
+          <div class="skill-row"><span class="skill-name">Python</span><span class="skill-level mono">scripts, coursework</span></div>
+          <div class="skill-row"><span class="skill-name">C# / C++</span><span class="skill-level mono">coursework</span></div>
+          <div class="skill-row"><span class="skill-name">REST APIs</span><span class="skill-level mono">AthleteOS, Finance Tracker</span></div>
         </div>
 
         <div class="skill-col">
@@ -403,10 +463,10 @@
             <h3 class="skill-col-title">Data &amp; Cloud</h3>
             <span class="skill-col-count mono">04</span>
           </div>
-          <div class="skill-row"><span class="skill-name is-adv">SQL / MySQL</span><span class="skill-level mono">advanced</span></div>
-          <div class="skill-row"><span class="skill-name">Supabase</span><span class="skill-level mono">intermediate</span></div>
-          <div class="skill-row"><span class="skill-name">Firebase</span><span class="skill-level mono">intermediate</span></div>
-          <div class="skill-row"><span class="skill-name">Cloudinary</span><span class="skill-level mono">intermediate</span></div>
+          <div class="skill-row"><span class="skill-name is-adv">SQL / MySQL</span><span class="skill-level mono">Finance Tracker, User Management</span></div>
+          <div class="skill-row"><span class="skill-name">Supabase</span><span class="skill-level mono">AthleteOS</span></div>
+          <div class="skill-row"><span class="skill-name">Firebase</span><span class="skill-level mono">Board Royal</span></div>
+          <div class="skill-row"><span class="skill-name">Cloudinary</span><span class="skill-level mono">Cloud Vault</span></div>
         </div>
 
         <div class="skill-col">
@@ -414,11 +474,11 @@
             <h3 class="skill-col-title">Tools</h3>
             <span class="skill-col-count mono">05</span>
           </div>
-          <div class="skill-row"><span class="skill-name is-adv">Git / GitHub</span><span class="skill-level mono">advanced</span></div>
-          <div class="skill-row"><span class="skill-name">Linux</span><span class="skill-level mono">intermediate</span></div>
-          <div class="skill-row"><span class="skill-name">PWA &amp; SW</span><span class="skill-level mono">intermediate</span></div>
-          <div class="skill-row"><span class="skill-name">GitHub Actions</span><span class="skill-level mono">intermediate</span></div>
-          <div class="skill-row"><span class="skill-name">Stripe</span><span class="skill-level mono">intermediate</span></div>
+          <div class="skill-row"><span class="skill-name is-adv">Git / GitHub</span><span class="skill-level mono">every project</span></div>
+          <div class="skill-row"><span class="skill-name">Linux</span><span class="skill-level mono">dev environment</span></div>
+          <div class="skill-row"><span class="skill-name">PWA &amp; SW</span><span class="skill-level mono">AthleteOS, Cloud Vault, Board Royal</span></div>
+          <div class="skill-row"><span class="skill-name">GitHub Actions</span><span class="skill-level mono">Finance Tracker</span></div>
+          <div class="skill-row"><span class="skill-name">Stripe</span><span class="skill-level mono">AthleteOS</span></div>
         </div>
 
       </div>
@@ -555,19 +615,19 @@
             <div class="field">
               <label for="fName">Your name <span class="req">*</span></label>
               <input type="text" id="fName" name="name" required minlength="2" maxlength="80" placeholder="Ada Lovelace">
-              <span class="err mono">Please enter your name.</span>
+              <span class="err mono" role="alert" aria-live="polite">Please enter your name.</span>
             </div>
             <div class="field">
               <label for="fEmail">Email <span class="req">*</span></label>
               <input type="email" id="fEmail" name="email" required placeholder="you@example.com">
-              <span class="err mono">Please enter a valid email.</span>
+              <span class="err mono" role="alert" aria-live="polite">Please enter a valid email.</span>
             </div>
           </div>
 
           <div class="form-row">
             <div class="field">
               <label for="fPhone">Phone <span style="opacity:.6">(optional)</span></label>
-              <input type="tel" id="fPhone" name="phone" placeholder="+383 …">
+              <input type="tel" id="fPhone" name="phone" inputmode="tel" pattern="[0-9+\s()\-]{6,}" autocomplete="tel" placeholder="+383 …">
             </div>
             <div class="field">
               <label for="fSubject">Topic <span class="req">*</span></label>
@@ -579,7 +639,7 @@
                 <option value="feedback">Feedback</option>
                 <option value="other">Other</option>
               </select>
-              <span class="err mono">Please pick a topic.</span>
+              <span class="err mono" role="alert" aria-live="polite">Please pick a topic.</span>
             </div>
           </div>
 
@@ -640,6 +700,7 @@
 
       <div class="footer-base">
         <span>© <span id="year">2026</span> Alkan Zilgir · All rights reserved.</span>
+        <span>Last updated <strong style="color:var(--bg)">May 2026</strong></span>
         <span>Designed &amp; built by hand in <span style="color:var(--accent)">HTML</span>, <span style="color:var(--accent)">CSS</span>, <span style="color:var(--accent)">JS</span>.</span>
       </div>
     </div>
@@ -649,6 +710,6 @@
     <i class="bi bi-arrow-up" aria-hidden="true"></i>
   </a>
 
-  <script src="script.js" defer></script>
+  <script src="script.js?v=2026053108" defer></script>
 </body>
 </html>

@@ -40,7 +40,9 @@
      LENIS — smooth scroll (gracefully degrades if blocked)
      ===================================================== */
   let lenis = null;
-  if (!reduce) {
+  const isCoarse = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+  const isNarrow = window.matchMedia('(max-width: 880px)').matches;
+  if (!reduce && !isCoarse && !isNarrow) {
     const lenisScript = document.createElement('script');
     lenisScript.src = 'https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js';
     lenisScript.async = true;
@@ -185,7 +187,7 @@
   const nav = document.getElementById('nav');
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.querySelectorAll('.nav-link');
-  const sections = ['work', 'about', 'skills', 'timeline'].map((id) => document.getElementById(id)).filter(Boolean);
+  const sections = ['work', 'about', 'skills', 'timeline', 'contact'].map((id) => document.getElementById(id)).filter(Boolean);
 
   const updateNavScroll = () => {
     if (!nav) return;
@@ -194,12 +196,31 @@
   updateNavScroll();
   window.addEventListener('scroll', updateNavScroll, { passive: true });
 
+  const closeMenu = () => {
+    if (!nav) return;
+    nav.classList.remove('menu-open');
+    body.classList.remove('nav-open');
+    navToggle?.setAttribute('aria-expanded', 'false');
+  };
+
   if (navToggle && nav) {
     navToggle.addEventListener('click', () => {
       const open = nav.classList.toggle('menu-open');
+      body.classList.toggle('nav-open', open);
       navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   }
+
+  // Close mobile menu on any in-page anchor click, regardless of Lenis state.
+  document.querySelectorAll('a[href^="#"]').forEach((a) => {
+    a.addEventListener('click', () => closeMenu());
+  });
+
+  // Close on Escape, and if viewport grows past mobile breakpoint.
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+  window.matchMedia('(min-width: 881px)').addEventListener?.('change', (ev) => {
+    if (ev.matches) closeMenu();
+  });
 
   if (sections.length && 'IntersectionObserver' in window) {
     const spy = new IntersectionObserver((entries) => {
@@ -212,6 +233,31 @@
     }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
     sections.forEach((s) => spy.observe(s));
   }
+
+  /* =====================================================
+     MAILTO links — copy to clipboard with feedback
+     Always gives visible response even when no mail client is configured.
+     ---------------------------------------------------- */
+  const mailtoLinks = document.querySelectorAll('a[href^="mailto:"]');
+  mailtoLinks.forEach((a) => {
+    const email = a.getAttribute('href').replace(/^mailto:/, '').split('?')[0];
+    a.addEventListener('click', () => {
+      // Don't preventDefault — let mailto: still open the default mail client if one exists.
+      if (navigator.clipboard?.writeText) {
+        navigator.clipboard.writeText(email).then(() => {
+          const original = a.dataset.originalText || a.innerHTML;
+          a.dataset.originalText = original;
+          if (a.dataset.copyState === 'pending') return;
+          a.dataset.copyState = 'pending';
+          a.innerHTML = '<span style="color:var(--accent)">Copied ✓</span>';
+          setTimeout(() => {
+            a.innerHTML = original;
+            delete a.dataset.copyState;
+          }, 1600);
+        }).catch(() => {});
+      }
+    });
+  });
 
   /* =====================================================
      BACK TO TOP
@@ -235,6 +281,17 @@
       field.classList.toggle('has-error', !valid);
       return valid;
     };
+
+    // Phone: strip anything that isn't a digit / + / space / () / -
+    const phone = document.getElementById('fPhone');
+    if (phone) {
+      const sanitize = () => {
+        const cleaned = phone.value.replace(/[^\d+\s()\-]/g, '');
+        if (cleaned !== phone.value) phone.value = cleaned;
+      };
+      phone.addEventListener('input', sanitize);
+      phone.addEventListener('paste', () => setTimeout(sanitize, 0));
+    }
 
     form.querySelectorAll('.field').forEach((field) => {
       const input = field.querySelector('input, select, textarea');
