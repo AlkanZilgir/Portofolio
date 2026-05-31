@@ -714,6 +714,65 @@ section { position: relative; }
   .skill-col { border-right: none !important; }
 }
 
+/* ====================  CURRENTLY BUILDING  ==================== */
+.now-building {
+  display: grid;
+  gap: var(--s-3);
+  padding: var(--s-8) var(--s-8) var(--s-8);
+  margin-bottom: var(--s-16);
+  background: var(--bg-elev);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  position: relative;
+}
+.now-building-head {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: var(--s-3);
+  padding-bottom: var(--s-3);
+  border-bottom: 1px dashed var(--rule);
+}
+.now-building-lbl {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: var(--font-mono); font-size: 0.72rem;
+  letter-spacing: 0.08em; color: var(--ink);
+  font-weight: 500;
+}
+.now-building-lbl .ind {
+  width: 7px; height: 7px; background: var(--accent);
+  border-radius: 50%;
+  animation: pulse-dot 2.4s ease-in-out infinite;
+}
+.now-building-meta {
+  font-family: var(--font-mono); font-size: 0.72rem;
+  color: var(--ink-mute); letter-spacing: 0.04em;
+}
+.now-building-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 500; letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-top: var(--s-1);
+}
+.now-building-title em {
+  font-style: italic; color: var(--accent); font-weight: 400;
+}
+.now-building-desc {
+  font-size: var(--t-md);
+  color: var(--ink-soft);
+  max-width: 70ch;
+  line-height: 1.65;
+}
+.now-building-tags {
+  display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s-3);
+  font-family: var(--font-mono); font-size: 0.72rem;
+  color: var(--ink-mute);
+  margin-top: var(--s-2);
+}
+@media (max-width: 560px) {
+  .now-building { padding: var(--s-6); margin-bottom: var(--s-12); }
+}
+
 /* =====================  WORK / PROJECTS  ===================== */
 .work-grid {
   display: grid;
