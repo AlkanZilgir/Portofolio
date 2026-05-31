@@ -778,6 +778,7 @@ section { position: relative; }
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--s-12) var(--s-8);
+  align-items: start;
 }
 .work-item {
   display: grid;
@@ -1364,10 +1365,39 @@ section { position: relative; }
 /* Mobile menu: lock background scroll when open */
 body.nav-open { overflow: hidden; touch-action: none; }
 
-/* Touch devices: reveal hover-only affordances so cards stay usable */
+/* Touch devices: hide hover-revealed overlays by default; tap to reveal */
 @media (hover: none) {
-  .work-actions { opacity: 1; transform: none; }
   .work-frame img { transform: none !important; }
+
+  /* Hide overlays by default so thumbnail is visible on first sight */
+  .work-actions {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: opacity 220ms var(--ease-out), transform 220ms var(--ease-out);
+  }
+  .work-badge {
+    opacity: 0;
+    transition: opacity 220ms var(--ease-out);
+  }
+  /* Tapped state, toggled by JS */
+  .work-item.is-revealed .work-actions {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  .work-item.is-revealed .work-badge { opacity: 1; }
+
+  /* Always show timeline kind arrow on touch (no hover to reveal it) */
+  .tl-kind .arrow { opacity: 1; }
+}
+
+/* Belt-and-braces: phone widths always stack work cards full-width */
+@media (max-width: 760px) {
+  .work-grid { grid-template-columns: 1fr; }
+  .work-item,
+  .work-item.is-featured,
+  .work-item.is-half { grid-column: 1 / -1; }
 }
 
 /* Screenshot helper — collapse 100vh on hero so tall captures work */

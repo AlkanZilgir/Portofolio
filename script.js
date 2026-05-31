@@ -235,6 +235,32 @@
   }
 
   /* =====================================================
+     WORK CARDS — tap to reveal badge + actions on touch
+     ---------------------------------------------------- */
+  if (window.matchMedia('(hover: none)').matches) {
+    document.querySelectorAll('.work-item').forEach((item) => {
+      const frame = item.querySelector('.work-frame');
+      if (!frame) return;
+      frame.addEventListener('click', (e) => {
+        // Let real link taps through
+        if (e.target.closest('a')) return;
+        e.preventDefault();
+        // Close any other open card so only one shows actions at a time
+        document.querySelectorAll('.work-item.is-revealed').forEach((other) => {
+          if (other !== item) other.classList.remove('is-revealed');
+        });
+        item.classList.toggle('is-revealed');
+      });
+    });
+    // Tap outside any card closes the revealed state
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.work-item')) {
+        document.querySelectorAll('.work-item.is-revealed').forEach((el) => el.classList.remove('is-revealed'));
+      }
+    });
+  }
+
+  /* =====================================================
      MAILTO links — copy to clipboard with feedback
      Always gives visible response even when no mail client is configured.
      ---------------------------------------------------- */
