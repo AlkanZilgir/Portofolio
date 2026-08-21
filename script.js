@@ -29,6 +29,80 @@
     requestAnimationFrame(() => { window.scrollTo(0, targetY); root.style.scrollBehavior = prev; });
   }
 
+  /* =====================================================
+     THEME TOGGLE (light / dark)
+     Initial theme is set by the inline <head> script to avoid FOUC.
+     ---------------------------------------------------- */
+  const themeBtn = document.getElementById('themeToggle');
+  const syncThemeBtn = () => {
+    if (!themeBtn) return;
+    const dark = root.getAttribute('data-theme') === 'dark';
+    themeBtn.setAttribute('aria-pressed', String(dark));
+    themeBtn.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+    const icon = themeBtn.querySelector('i');
+    if (icon) icon.className = dark ? 'bi bi-sun' : 'bi bi-moon-stars';
+  };
+  syncThemeBtn();
+  // Enable colour transitions only after first paint so the initial load doesn't animate.
+  requestAnimationFrame(() => root.classList.add('theme-ready'));
+  if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      syncThemeBtn();
+    });
+  }
+
+  /* =====================================================
+     ACCESSIBILITY MENU (larger text / high contrast / reduce motion)
+     ---------------------------------------------------- */
+  const a11yBtn = document.getElementById('a11yToggle');
+  const a11yPanel = document.getElementById('a11yPanel');
+  if (a11yBtn && a11yPanel) {
+    const opts = a11yPanel.querySelectorAll('.a11y-opt[data-a11y]');
+    const syncOpts = () => opts.forEach((o) => {
+      o.setAttribute('aria-checked', String(root.classList.contains('a11y-' + o.dataset.a11y)));
+    });
+    syncOpts();
+
+    const openPanel = () => {
+      a11yPanel.hidden = false;
+      a11yBtn.setAttribute('aria-expanded', 'true');
+      document.addEventListener('click', onOutside);
+      document.addEventListener('keydown', onEsc);
+    };
+    const closePanel = () => {
+      a11yPanel.hidden = true;
+      a11yBtn.setAttribute('aria-expanded', 'false');
+      document.removeEventListener('click', onOutside);
+      document.removeEventListener('keydown', onEsc);
+    };
+    const onOutside = (e) => { if (!e.target.closest('.a11y')) closePanel(); };
+    const onEsc = (e) => { if (e.key === 'Escape') { closePanel(); a11yBtn.focus(); } };
+
+    a11yBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      a11yPanel.hidden ? openPanel() : closePanel();
+    });
+
+    opts.forEach((o) => o.addEventListener('click', () => {
+      const cls = 'a11y-' + o.dataset.a11y;
+      const on = root.classList.toggle(cls);
+      try { localStorage.setItem(o.dataset.a11y, on ? '1' : '0'); localStorage.setItem('a11y-' + o.dataset.a11y, on ? '1' : '0'); } catch (e) {}
+      syncOpts();
+    }));
+
+    const resetBtn = document.getElementById('a11yReset');
+    if (resetBtn) resetBtn.addEventListener('click', () => {
+      ['large-text', 'high-contrast', 'reduce-motion'].forEach((k) => {
+        root.classList.remove('a11y-' + k);
+        try { localStorage.setItem('a11y-' + k, '0'); } catch (e) {}
+      });
+      syncOpts();
+    });
+  }
+
   /* ---------- Mark JS ready so reveal hides cleanly ---------- */
   // Add `.js-ready` only after the first paint so the very first frame is visible.
   // This way reveal items never ship blank if the IntersectionObserver never fires.
