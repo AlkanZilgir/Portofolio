@@ -23,6 +23,7 @@
   /* accent tuned for small text: --accent fails 4.5:1 on the light bg */
   --accent-text:   var(--accent-deep);
   --rule-hard:     oklch(0.80 0.006 60);   /* light-mode twin of the #2A2A2A divider */
+  --compartment:   oklch(0.955 0.003 60);  /* alternating project block */
 
   --dark:          oklch(0.180 0.008 250);
   --dark-accent:   oklch(0.88 0.210 128);   /* accent for the always-dark sections */
@@ -448,13 +449,25 @@ p { text-wrap: pretty; }
 
 /* =====================  SECTION HEADER  ===================== */
 section { position: relative; }
-.section { padding: var(--s-24) 0; }
+.section { padding: clamp(4rem, 8vw, 7rem) 0; }
 .section-tight { padding: var(--s-16) 0; }
 
 .section-head {
+  position: relative;
   margin-bottom: var(--s-16);
   padding-bottom: var(--s-6);
-  border-bottom: 1px solid var(--rule);
+}
+/* anchors the grid where a full-width rule used to sit */
+.section-head::before {
+  content: '+';
+  position: absolute;
+  top: -1.75rem;
+  left: 0;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  line-height: 1;
+  color: var(--ink-mute);
+  pointer-events: none;
 }
 .section-title {
   font-family: var(--font-display);
@@ -633,7 +646,7 @@ section { position: relative; }
 #skills { background: var(--dark); color: var(--dark-ink); }
 #skills .section-num, #skills .section-num strong { color: var(--dark-soft); }
 #skills .section-num strong { color: var(--dark-accent); }
-#skills .section-head { border-bottom-color: var(--dark-rule); }
+#skills .section-head::before { color: var(--dark-soft); }
 #skills .section-title { color: var(--dark-ink); }
 #skills .section-lede { color: var(--dark-soft); }
 
@@ -706,8 +719,7 @@ section { position: relative; }
   gap: var(--s-3);
   padding: var(--s-8) var(--s-8) var(--s-8);
   margin-bottom: var(--s-16);
-  background: var(--bg-elev);
-  border: 1px solid var(--rule);
+  background: var(--compartment);
   position: relative;
 }
 .now-building-head {
@@ -763,7 +775,10 @@ section { position: relative; }
   display: grid;
   gap: var(--s-6);
   position: relative;
+  padding: var(--s-6);
 }
+/* alternating tint replaces the rules that used to segment the grid */
+.work-item:nth-child(even) { background: var(--compartment); }
 .work-item.is-featured { grid-column: 1 / -1; }
 .work-item.is-half    { grid-column: span 6; }
 
@@ -867,7 +882,6 @@ section { position: relative; }
   justify-content: space-between; gap: var(--s-3) var(--s-4);
   margin-top: var(--s-2);
   padding-top: var(--s-4);
-  border-top: 1px solid var(--rule);
 }
 .work-outcome {
   font-size: 0.9rem; color: var(--ink-soft);
@@ -907,8 +921,6 @@ section { position: relative; }
 
 /* Read-more case study */
 .work-more {
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
   margin: var(--s-1) 0 0;
 }
 .work-more > summary {
@@ -1038,7 +1050,7 @@ section { position: relative; }
 /* =====================  CONTACT  ===================== */
 #contact { background: var(--ink); color: var(--bg); }
 
-#contact .section-head { border-bottom-color: var(--dark-rule); }
+#contact .section-head::before { color: var(--dark-soft); }
 #contact .section-num, #contact .section-num strong { color: var(--dark-soft); }
 #contact .section-num strong { color: var(--dark-accent); }
 #contact .section-title { color: var(--bg); }
@@ -1463,6 +1475,7 @@ body.is-static-shot .back-to-top { display: none; }
   --accent-tint: oklch(0.28 0.070 128);
   --accent-text: var(--accent);
   --rule-hard:   #2A2A2A;
+  --compartment: oklch(0.195 0.006 250);   /* ~#111 on the dark page */
 
   --dark:        oklch(0.215 0.008 250);
   --dark-accent: oklch(0.88 0.210 128);
