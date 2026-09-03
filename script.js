@@ -152,46 +152,6 @@
   }
 
   /* =====================================================
-     MAGNETIC ELEMENTS
-     ===================================================== */
-  if (isFine && !reduce) {
-    document.querySelectorAll('[data-magnetic]').forEach((el) => {
-      const strength = parseFloat(el.dataset.magneticStrength || '0.35');
-      const radius = parseFloat(el.dataset.magneticRadius || '110');
-      let rect = null;
-
-      const refresh = () => { rect = el.getBoundingClientRect(); };
-      refresh();
-      window.addEventListener('resize', refresh, { passive: true });
-      window.addEventListener('scroll', () => { rect = null; }, { passive: true });
-
-      el.addEventListener('pointermove', (e) => {
-        if (!rect) refresh();
-        const cx = rect.left + rect.width / 2;
-        const cy = rect.top + rect.height / 2;
-        const dx = e.clientX - cx;
-        const dy = e.clientY - cy;
-        const dist = Math.hypot(dx, dy);
-        if (dist > radius) {
-          el.style.transform = '';
-          return;
-        }
-        const pull = (1 - dist / radius);
-        el.style.transform = `translate(${dx * strength * pull}px, ${dy * strength * pull}px)`;
-      });
-
-      el.addEventListener('pointerleave', () => {
-        el.style.transition = 'transform 540ms cubic-bezier(0.16, 1, 0.3, 1)';
-        el.style.transform = '';
-        setTimeout(() => { el.style.transition = ''; }, 560);
-      });
-      el.addEventListener('pointerdown', () => {
-        el.style.transition = '';
-      });
-    });
-  }
-
-  /* =====================================================
      REVEAL ON SCROLL
      ---------------------------------------------------- */
   const revealEls = document.querySelectorAll('[data-reveal]');
@@ -316,17 +276,14 @@
       const frame = item.querySelector('.work-frame');
       if (!frame) return;
       frame.addEventListener('click', (e) => {
-        // Let real link taps through
-        if (e.target.closest('a')) return;
+        if (e.target.closest('a')) return;          // let real link taps through
         e.preventDefault();
-        // Close any other open card so only one shows actions at a time
         document.querySelectorAll('.work-item.is-revealed').forEach((other) => {
           if (other !== item) other.classList.remove('is-revealed');
         });
         item.classList.toggle('is-revealed');
       });
     });
-    // Tap outside any card closes the revealed state
     document.addEventListener('click', (e) => {
       if (!e.target.closest('.work-item')) {
         document.querySelectorAll('.work-item.is-revealed').forEach((el) => el.classList.remove('is-revealed'));
